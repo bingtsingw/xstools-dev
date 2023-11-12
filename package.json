@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "mrm": "^4.1.22",
+    "@bingtsingw/mrm-preset": "^0.10.0"
+  },
+  "scripts": {
+    "mrm": "mrm --preset=@bingtsingw/mrm-preset"
+  }
+}
