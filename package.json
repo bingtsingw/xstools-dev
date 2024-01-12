@@ -27,55 +27,26 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-packagejson",
-      "prettier-plugin-organize-imports"
-    ],
-    "printWidth": 120,
-    "proseWrap": "never",
-    "singleQuote": true,
-    "trailingComma": "all"
+  "prettier": "@xstools-dev/prettier-config/base",
+  "dependencies": {
+    "@xstools-dev/eslint-config": "workspace:^",
+    "@xstools-dev/prettier-config": "workspace:^"
   },
-  "eslintConfig": {
-    "extends": [
-      "alloy",
-      "alloy/typescript"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "*.config.js"
-        ],
-        "rules": {
-          "@typescript-eslint/no-require-imports": "off",
-          "import/no-commonjs": "off"
-        }
-      }
-    ]
-  },
-  "eslintIgnore": [
-    "dist",
-    "build",
-    "out"
-  ],
   "devDependencies": {
-    "@babel/core": "^7.23.7",
-    "@babel/eslint-parser": "^7.23.3",
     "@bingtsingw/mrm-preset": "^0.10.0",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@types/node": "^20.11.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.56.0",
-    "eslint-config-alloy": "^5.1.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "mrm": "^4.1.22",
-    "prettier": "^3.1.1",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier-plugin-packagejson": "^2.4.9",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

@@ -1,0 +1,48 @@
+{
+  "name": "@xstools-dev/prettier-config",
+  "version": "0.0.2",
+  "license": "MIT",
+  "exports": {
+    "./base": {
+      "types": "./src/base.ts",
+      "default": "./dist/base.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
+    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@xstools-dev/eslint-config/base"
+    ]
+  },
+  "dependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-multiline-arrays": "^3.0.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.9",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prettier-plugin-tailwindcss": "^0.5.11"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "tsup": {
+    "entry": [
+      "src/**/*.ts"
+    ],
+    "format": [
+      "cjs"
+    ],
+    "clean": true,
+    "minify": true
+  }
+}
