@@ -1,11 +1,15 @@
 {
+  "name": "xstools-dev",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build": "turbo run build",
     "commit": "cz",
+    "dev": "turbo run dev",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
-    "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
-    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:js": "turbo run lint:js",
+    "lint:js:fix": "turbo run lint:js:fix",
     "mrm": "mrm --preset=@bingtsingw/mrm-preset",
     "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi"
   },
