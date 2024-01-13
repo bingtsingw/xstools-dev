@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/eslint-config",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "license": "MIT",
   "exports": {
     "./base": {
@@ -19,9 +19,7 @@
     "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
   },
   "eslintConfig": {
-    "extends": [
-      "@xstools-dev/eslint-config/base"
-    ]
+    "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.18.1",

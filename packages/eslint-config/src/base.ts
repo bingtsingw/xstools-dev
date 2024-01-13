@@ -9,6 +9,8 @@ const base: Linter.Config = {
       rules: {
         '@typescript-eslint/no-require-imports': 'off',
         'import/no-commonjs': 'off',
+        'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       },
     },
   ],
