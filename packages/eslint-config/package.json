@@ -1,11 +1,15 @@
 {
   "name": "@xstools-dev/eslint-config",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "license": "MIT",
   "exports": {
     "./base": {
       "types": "./src/base.ts",
       "default": "./dist/base.js"
+    },
+    "./taro": {
+      "types": "./src/taro.ts",
+      "default": "./dist/taro.js"
     }
   },
   "files": [
@@ -22,19 +26,19 @@
     "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
-    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "eslint": "^8.57.0",
     "eslint-config-alloy": "^5.1.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5"
+    "eslint-plugin-react-refresh": "^0.4.6"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.2"
+    "@types/eslint": "^8.56.7"
   },
   "publishConfig": {
     "access": "public",

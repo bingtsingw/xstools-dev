@@ -1,21 +1,6 @@
 import type { Linter } from 'eslint';
+import { baseConfig } from './_util';
 
-const base: Linter.Config = {
-  extends: ['alloy', 'alloy/typescript'],
-  ignorePatterns: ['dist', 'build', 'out'],
-  rules: {
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-  },
-  overrides: [
-    {
-      files: ['*.config.js'],
-      rules: {
-        '@typescript-eslint/no-require-imports': 'off',
-        'import/no-commonjs': 'off',
-      },
-    },
-  ],
-};
+const base: Linter.Config = baseConfig;
 
 module.exports = base;
