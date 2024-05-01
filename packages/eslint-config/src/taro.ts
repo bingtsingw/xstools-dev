@@ -19,6 +19,9 @@ const taro: Linter.Config = {
   },
   globals: {
     JSX: true,
+    __wxConfig: true,
+    defineAppConfig: true,
+    definePageConfig: true,
   },
 };
 
