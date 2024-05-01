@@ -30,7 +30,8 @@
   "prettier": "@xstools-dev/prettier-config/base",
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
-    "@xstools-dev/prettier-config": "workspace:^"
+    "@xstools-dev/prettier-config": "workspace:^",
+    "@xstools-dev/tools": "workspace:^"
   },
   "devDependencies": {
     "@bingtsingw/mrm-preset": "^0.11.1",

@@ -1,0 +1,59 @@
+{
+  "name": "@xstools-dev/tools",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./chokidar": {
+      "types": "./dist/chokidar.d.ts",
+      "default": "./dist/chokidar.js"
+    }
+  },
+  "bin": {
+    "del": "./bin/del.js",
+    "detect-port": "./bin/detect-port.js",
+    "dotenv": "./bin/dotenv.js",
+    "fkill": "./bin/fkill.js",
+    "tsup": "./bin/tsup.js",
+    "turbo": "./bin/turbo.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
+    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "eslintConfig": {
+    "extends": "@xstools-dev/eslint-config/base"
+  },
+  "dependencies": {
+    "@types/chokidar": "^2.1.3",
+    "chokidar": "^3.6.0",
+    "del-cli": "^5.1.0",
+    "detect-port": "^1.5.1",
+    "dotenv-cli": "^7.4.1",
+    "fkill-cli": "^8.0.0",
+    "tsup": "^8.0.2",
+    "turbo": "^1.13.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "tsup": {
+    "entry": [
+      "src/**/*.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "dts": true,
+    "clean": true,
+    "minify": true
+  }
+}
