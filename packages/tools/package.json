@@ -1,14 +1,10 @@
 {
   "name": "@xstools-dev/tools",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "type": "module",
-  "exports": {
-    "./chokidar": {
-      "types": "./dist/chokidar.d.ts",
-      "default": "./dist/chokidar.js"
-    }
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": {
     "del": "./bin/del.js",
     "detect-port": "./bin/detect-port.js",
@@ -36,7 +32,9 @@
     "chokidar": "^3.6.0",
     "del-cli": "^5.1.0",
     "detect-port": "^1.5.1",
+    "dotenv": "^16.4.5",
     "dotenv-cli": "^7.4.1",
+    "dotenv-expand": "^11.0.6",
     "fkill-cli": "^8.0.0",
     "tsup": "^8.0.2",
     "turbo": "^1.13.3"

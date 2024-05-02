@@ -142,9 +142,15 @@ importers:
       detect-port:
         specifier: ^1.5.1
         version: 1.5.1
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       dotenv-cli:
         specifier: ^7.4.1
         version: 7.4.1
+      dotenv-expand:
+        specifier: ^11.0.6
+        version: 11.0.6
       fkill-cli:
         specifier: ^8.0.0
         version: 8.0.0
@@ -4016,6 +4022,13 @@ packages:
   /dotenv-expand@10.0.0:
     resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
     engines: {node: '>=12'}
+    dev: false
+
+  /dotenv-expand@11.0.6:
+    resolution: {integrity: sha512-8NHi73otpWsZGBSZwwknTXS5pqMOrk9+Ssrna8xCaxkzEpU9OTf9R5ArQGVw03//Zmk9MOwLPng9WwndvpAJ5g==}
+    engines: {node: '>=12'}
+    dependencies:
+      dotenv: 16.4.5
     dev: false
 
   /dotenv-expand@9.0.0:
