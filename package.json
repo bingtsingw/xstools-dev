@@ -1,6 +1,6 @@
 {
   "name": "xstools-dev",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
@@ -37,13 +37,13 @@
     "@bingtsingw/mrm-preset": "^0.11.1",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.14.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.5",
     "mrm": "^4.1.22",
-    "tsup": "^8.0.2",
+    "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   },
   "publishConfig": {
