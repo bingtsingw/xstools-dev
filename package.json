@@ -1,6 +1,6 @@
 {
   "name": "xstools-dev",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
@@ -46,6 +46,7 @@
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   },
+  "packageManager": "pnpm@8.15.8",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

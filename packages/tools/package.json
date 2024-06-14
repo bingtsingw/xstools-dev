@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/tools",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -9,6 +9,7 @@
     "del": "./bin/del.js",
     "detect-port": "./bin/detect-port.js",
     "dotenv": "./bin/dotenv.js",
+    "dotenvx": "./bin/dotenvx.js",
     "fkill": "./bin/fkill.js",
     "tsup": "./bin/tsup.js",
     "turbo": "./bin/turbo.js"
