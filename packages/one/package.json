@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/one",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "eslintConfig": {
     "extends": "@xstools-dev/eslint-config/base"
   },

@@ -9,7 +9,8 @@
     "format:fix": "prettier . --write",
     "lint:js": "turbo run lint:js",
     "lint:js:fix": "turbo run lint:js:fix",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "publish": "turbo run build && changeset publish"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",

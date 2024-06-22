@@ -1,8 +1,9 @@
 {
   "name": "@xstools-dev/mono-tools",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "bin": {
+    "changeset": "./bin/changeset.js",
     "commitizen": "./bin/commitizen.js",
     "cz": "./bin/git-cz.js",
     "git-cz": "./bin/git-cz.js",
@@ -19,6 +20,7 @@
     "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
+    "@changesets/cli": "^2.27.5",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "commitizen": "^4.3.0",
