@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/mono-tools",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "bin": {
     "commitizen": "./bin/commitizen.js",

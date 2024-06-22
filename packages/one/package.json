@@ -1,0 +1,17 @@
+{
+  "name": "@xstools-dev/one",
+  "version": "0.0.1",
+  "eslintConfig": {
+    "extends": "@xstools-dev/eslint-config/base"
+  },
+  "dependencies": {
+    "@xstools-dev/eslint-config": "workspace:^",
+    "@xstools-dev/mono-tools": "workspace:^",
+    "@xstools-dev/prettier-config": "workspace:^",
+    "@xstools-dev/script-tools": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}

@@ -1,6 +1,5 @@
 {
   "name": "xstools-dev",
-  "version": "0.4.5",
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
@@ -10,7 +9,7 @@
     "format:fix": "prettier . --write",
     "lint:js": "turbo run lint:js",
     "lint:js:fix": "turbo run lint:js:fix",
-    "prepare": "npx simple-git-hooks"
+    "prepare": "simple-git-hooks"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
@@ -31,20 +30,11 @@
     }
   },
   "prettier": "@xstools-dev/prettier-config/base",
-  "dependencies": {
-    "@xstools-dev/eslint-config": "workspace:^",
-    "@xstools-dev/mono-tools": "workspace:^",
-    "@xstools-dev/prettier-config": "workspace:^",
-    "@xstools-dev/script-tools": "workspace:^"
-  },
   "devDependencies": {
     "@types/bun": "^1.1.5",
     "@types/node": "^20.14.7",
+    "@xstools-dev/one": "workspace:^",
     "typescript": "^5.5.2"
   },
-  "packageManager": "pnpm@8.15.8",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  }
+  "packageManager": "pnpm@9.4.0"
 }

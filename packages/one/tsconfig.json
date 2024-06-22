@@ -16,6 +16,5 @@
     "noUncheckedIndexedAccess": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false
-  },
-  "include": ["src"]
+  }
 }
