@@ -10,8 +10,11 @@
     "format:fix": "prettier . --write",
     "lint:js": "turbo run lint:js",
     "lint:js:fix": "turbo run lint:js:fix",
-    "mrm": "mrm --preset=@bingtsingw/mrm-preset",
-    "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi"
+    "prepare": "npx simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx commitlint --edit $1"
   },
   "commitlint": {
     "extends": [
@@ -30,20 +33,13 @@
   "prettier": "@xstools-dev/prettier-config/base",
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
+    "@xstools-dev/mono-tools": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",
     "@xstools-dev/tools": "workspace:^"
   },
   "devDependencies": {
-    "@bingtsingw/mrm-preset": "^0.11.1",
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@types/bun": "^1.1.5",
     "@types/node": "^20.14.7",
-    "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
-    "mrm": "^4.1.22",
-    "tsup": "^8.1.0",
     "typescript": "^5.5.2"
   },
   "packageManager": "pnpm@8.15.8",

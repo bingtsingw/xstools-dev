@@ -12,8 +12,7 @@
     "dotenvx": "./bin/dotenvx.js",
     "fkill": "./bin/fkill.js",
     "malagu": "./bin/malagu.js",
-    "tsup": "./bin/tsup.js",
-    "turbo": "./bin/turbo.js"
+    "tsup": "./bin/tsup.js"
   },
   "files": [
     "bin",
@@ -40,8 +39,7 @@
     "dotenv-cli": "^7.4.2",
     "dotenv-expand": "^11.0.6",
     "fkill-cli": "^8.0.0",
-    "tsup": "^8.1.0",
-    "turbo": "^2.0.4"
+    "tsup": "^8.1.0"
   },
   "publishConfig": {
     "access": "public",
