@@ -42,7 +42,7 @@
     "dotenv-expand": "^11.0.6",
     "fkill-cli": "^8.0.0",
     "tsup": "^8.1.0",
-    "turbo": "^1.13.3"
+    "turbo": "^2.0.4"
   },
   "publishConfig": {
     "access": "public",
