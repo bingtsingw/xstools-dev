@@ -17,9 +17,9 @@ importers:
       '@xstools-dev/prettier-config':
         specifier: workspace:^
         version: link:packages/prettier-config
-      '@xstools-dev/tools':
+      '@xstools-dev/script-tools':
         specifier: workspace:^
-        version: link:packages/tools
+        version: link:packages/script-tools
     devDependencies:
       '@types/bun':
         specifier: ^1.1.5
@@ -131,7 +131,7 @@ importers:
         specifier: ^0.6.5
         version: 0.6.5(prettier-plugin-organize-imports@3.2.4)(prettier@3.3.2)
 
-  packages/tools:
+  packages/script-tools:
     dependencies:
       '@dotenvx/dotenvx':
         specifier: ^0.45.0
@@ -371,13 +371,6 @@ packages:
       '@babel/types': 7.24.7
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /@babel/helper-module-imports@7.24.3:
-    resolution: {integrity: sha512-viKb0F9f2s0BCS22QSF308z/+1YWKV/76mwt61NBzS5izMzDPwdq1pTrzf+Li3npBWX9KdQbkeCt1jSAM7lZqg==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/types': 7.24.7
     dev: false
 
   /@babel/helper-module-imports@7.24.7:
@@ -1761,13 +1754,6 @@ packages:
       regenerator-runtime: 0.14.1
     dev: false
 
-  /@babel/runtime@7.24.4:
-    resolution: {integrity: sha512-dkxf7+hn8mFBwKjs9bvBlArzLVxVbS8usaPUDd5p2a9JCL9tB8OaOVN1isD4+Xyk4ns89/xeOmbQvgdK7IIVdA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.14.1
-    dev: false
-
   /@babel/runtime@7.24.7:
     resolution: {integrity: sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==}
     engines: {node: '>=6.9.0'}
@@ -2614,7 +2600,7 @@ packages:
       ora: 5.4.1
       prompts: 2.4.2
       randomatic: 3.1.1
-      semver: 7.6.0
+      semver: 7.6.2
       temp: 0.9.4
       traverse: 0.6.9
       ts-node: 10.9.2(@types/node@20.14.7)(typescript@4.5.5)
@@ -2662,7 +2648,7 @@ packages:
       ora: 5.4.1
       prompts: 2.4.2
       rimraf: 5.0.7
-      semver: 7.6.0
+      semver: 7.6.2
       traverse: 0.6.9
       update-notifier: 5.1.0
       watchpack: 2.4.1
@@ -3706,7 +3692,9 @@ packages:
   /babel-plugin-import@1.13.8:
     resolution: {integrity: sha512-36babpjra5m3gca44V6tSTomeBlPA7cHUynrE2WiQIm3rEGD9xy28MKsx5IdO45EbnpJY7Jrgd00C6Dwt/l/2Q==}
     dependencies:
-      '@babel/helper-module-imports': 7.24.3
+      '@babel/helper-module-imports': 7.24.7
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /babel-plugin-minify-dead-code-elimination@0.5.2:
@@ -4007,7 +3995,7 @@ packages:
     engines: {node: '>= 8.10.0'}
     dependencies:
       anymatch: 3.1.3
-      braces: 3.0.2
+      braces: 3.0.3
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
       is-glob: 4.0.3
@@ -5552,14 +5540,6 @@ packages:
       is-callable: 1.2.7
     dev: false
 
-  /foreground-child@3.1.1:
-    resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
-    engines: {node: '>=14'}
-    dependencies:
-      cross-spawn: 7.0.3
-      signal-exit: 4.1.0
-    dev: false
-
   /foreground-child@3.2.1:
     resolution: {integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==}
     engines: {node: '>=14'}
@@ -5741,18 +5721,6 @@ packages:
 
   /glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
-    dev: false
-
-  /glob@10.4.1:
-    resolution: {integrity: sha512-2jelhlq3E4ho74ZyVLN03oKdAZVUa6UDZzFLVH1H7dnoax+y9qyaq8zBkfDIggjniU19z0wU18y16jMB2eyVIw==}
-    engines: {node: '>=16 || 14 >=14.18'}
-    hasBin: true
-    dependencies:
-      foreground-child: 3.1.1
-      jackspeak: 3.4.0
-      minimatch: 9.0.4
-      minipass: 7.1.2
-      path-scurry: 1.11.1
     dev: false
 
   /glob@10.4.2:
@@ -6092,7 +6060,7 @@ packages:
       ansi-escapes: 6.2.1
       figures: 5.0.0
       inquirer: 9.2.20
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       run-async: 2.4.1
       rxjs: 7.8.1
     dev: false
@@ -6553,7 +6521,7 @@ packages:
   /jexl@2.3.0:
     resolution: {integrity: sha512-ecqln4kTWNkMwbFvTukOMDq1jy1GcPzvshhMp/s4pxU86xdLDq7HbDRa87DfMfbSAOS8V6EwvCdfs0S+w/iycA==}
     dependencies:
-      '@babel/runtime': 7.24.4
+      '@babel/runtime': 7.24.7
     dev: false
 
   /jiti@1.21.0:
@@ -6707,11 +6675,6 @@ packages:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
-    dev: false
-
-  /lilconfig@3.1.1:
-    resolution: {integrity: sha512-O18pf7nyvHTckunPWCV1XUNXU1piu01y2b7ATJ0ppkUkk8ocqVWBrYjJBCwHDjD/ZWcfyrA0P4gKhzWGi5EINQ==}
-    engines: {node: '>=14'}
     dev: false
 
   /lilconfig@3.1.2:
@@ -7158,8 +7121,8 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       hosted-git-info: 4.1.0
-      is-core-module: 2.13.1
-      semver: 7.6.0
+      is-core-module: 2.14.0
+      semver: 7.6.2
       validate-npm-package-license: 3.0.4
     dev: false
 
@@ -7568,8 +7531,8 @@ packages:
       ts-node:
         optional: true
     dependencies:
-      lilconfig: 3.1.1
-      yaml: 2.4.3
+      lilconfig: 3.1.2
+      yaml: 2.4.5
     dev: false
 
   /prelude-ls@1.2.1:
@@ -8026,7 +7989,7 @@ packages:
     engines: {node: '>=14.18'}
     hasBin: true
     dependencies:
-      glob: 10.4.1
+      glob: 10.4.2
     dev: false
 
   /rollup@4.18.0:
@@ -8530,7 +8493,7 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       commander: 4.1.1
-      glob: 10.4.1
+      glob: 10.4.2
       lines-and-columns: 1.2.4
       mz: 2.7.0
       pirates: 4.0.6
@@ -9063,7 +9026,7 @@ packages:
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
       pupa: 2.1.1
-      semver: 7.6.0
+      semver: 7.6.2
       semver-diff: 3.1.1
       xdg-basedir: 4.0.0
     dev: false
@@ -9315,12 +9278,6 @@ packages:
 
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: false
-
-  /yaml@2.4.3:
-    resolution: {integrity: sha512-sntgmxj8o7DE7g/Qi60cqpLBA3HG3STcDA0kO+WfB05jEKhZMbY7umNm2rBpQvsmZ16/lPXCJGW2672dgOUkrg==}
-    engines: {node: '>= 14'}
-    hasBin: true
     dev: false
 
   /yaml@2.4.5:

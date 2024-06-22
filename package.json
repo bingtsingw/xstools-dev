@@ -35,7 +35,7 @@
     "@xstools-dev/eslint-config": "workspace:^",
     "@xstools-dev/mono-tools": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",
-    "@xstools-dev/tools": "workspace:^"
+    "@xstools-dev/script-tools": "workspace:^"
   },
   "devDependencies": {
     "@types/bun": "^1.1.5",
