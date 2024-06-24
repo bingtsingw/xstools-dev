@@ -1,6 +1,6 @@
 {
-  "name": "@xstools-dev/one",
-  "version": "0.1.1",
+  "name": "@xstools-dev/mix",
+  "version": "0.2.0",
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
     "@xstools-dev/mono-tools": "workspace:^",

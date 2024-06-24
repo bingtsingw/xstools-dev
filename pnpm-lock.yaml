@@ -14,9 +14,9 @@ importers:
       '@types/node':
         specifier: ^20.14.7
         version: 20.14.8
-      '@xstools-dev/one':
+      '@xstools-dev/mix':
         specifier: workspace:^
-        version: link:packages/one
+        version: link:packages/mix
       typescript:
         specifier: ^5.5.2
         version: 5.5.2
@@ -76,6 +76,24 @@ importers:
         specifier: ^8.56.10
         version: 8.56.10
 
+  packages/mix:
+    dependencies:
+      '@xstools-dev/eslint-config':
+        specifier: workspace:^
+        version: link:../eslint-config
+      '@xstools-dev/mono-tools':
+        specifier: workspace:^
+        version: link:../mono-tools
+      '@xstools-dev/prettier-config':
+        specifier: workspace:^
+        version: link:../prettier-config
+      '@xstools-dev/script-tools':
+        specifier: workspace:^
+        version: link:../script-tools
+      '@xstools-dev/ts-config':
+        specifier: workspace:^
+        version: link:../ts-config
+
   packages/mono-tools:
     dependencies:
       '@changesets/cli':
@@ -105,24 +123,6 @@ importers:
       turbo:
         specifier: ^2.0.4
         version: 2.0.4
-
-  packages/one:
-    dependencies:
-      '@xstools-dev/eslint-config':
-        specifier: workspace:^
-        version: link:../eslint-config
-      '@xstools-dev/mono-tools':
-        specifier: workspace:^
-        version: link:../mono-tools
-      '@xstools-dev/prettier-config':
-        specifier: workspace:^
-        version: link:../prettier-config
-      '@xstools-dev/script-tools':
-        specifier: workspace:^
-        version: link:../script-tools
-      '@xstools-dev/ts-config':
-        specifier: workspace:^
-        version: link:../ts-config
 
   packages/prettier-config:
     dependencies:

@@ -38,7 +38,7 @@
   "devDependencies": {
     "@types/bun": "^1.1.5",
     "@types/node": "^20.14.7",
-    "@xstools-dev/one": "workspace:^",
+    "@xstools-dev/mix": "workspace:^",
     "typescript": "^5.5.2"
   },
   "packageManager": "pnpm@9.4.0"
