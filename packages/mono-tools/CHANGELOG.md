@@ -1,5 +1,11 @@
 # @xstools-dev/mono-tools
 
+## 0.3.0
+
+### Minor Changes
+
+- add sherif
+
 ## 0.2.0
 
 ### Minor Changes

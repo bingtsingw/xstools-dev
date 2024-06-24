@@ -1,5 +1,13 @@
 # @xstools-dev/one
 
+## 0.1.1
+
+### Patch Changes
+
+- add sherif
+- Updated dependencies
+  - @xstools-dev/mono-tools@0.3.0
+
 ## 0.1.0
 
 ### Minor Changes

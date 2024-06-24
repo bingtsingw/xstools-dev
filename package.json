@@ -1,9 +1,11 @@
 {
   "name": "@xstools-dev/mono",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
     "changeset": "changeset",
+    "check-mono": "sherif",
     "check-types": "turbo run check-types",
     "commit": "cz",
     "dev": "turbo run dev",
@@ -12,7 +14,7 @@
     "lint:js": "turbo run lint:js",
     "lint:js:fix": "turbo run lint:js:fix",
     "prepare": "simple-git-hooks",
-    "publish": "turbo run build && changeset publish"
+    "publish": "turbo run build && changeset version && changeset publish"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
