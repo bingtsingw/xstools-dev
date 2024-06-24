@@ -9,6 +9,7 @@
       "dependsOn": ["^build"]
     },
     "lint:js": {},
-    "lint:js:fix": {}
+    "lint:js:fix": {},
+    "check-types": {}
   }
 }

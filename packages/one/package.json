@@ -1,14 +1,12 @@
 {
   "name": "@xstools-dev/one",
-  "version": "0.0.2",
-  "eslintConfig": {
-    "extends": "@xstools-dev/eslint-config/base"
-  },
+  "version": "0.1.0",
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
     "@xstools-dev/mono-tools": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",
-    "@xstools-dev/script-tools": "workspace:^"
+    "@xstools-dev/script-tools": "workspace:^",
+    "@xstools-dev/ts-config": "workspace:^"
   },
   "publishConfig": {
     "access": "public",

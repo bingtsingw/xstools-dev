@@ -1,20 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "ES5",
-    "allowJs": true,
-    "checkJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noUncheckedIndexedAccess": true,
-    "experimentalDecorators": true,
-    "strictPropertyInitialization": false
-  },
+  "extends": "@xstools-dev/ts-config/base/tsconfig.json",
   "include": ["src"]
 }

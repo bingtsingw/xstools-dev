@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // ======== Type Checking ========
+    "strict": true,
+    // "noImplicitAny": true, // strict
+    // "noImplicitThis": true, // strict
+
+    // "allowUnreachableCode": false, // eslint
+    // "allowUnusedLabels": false, // eslint
+    "alwaysStrict": true, //
+    "exactOptionalPropertyTypes": true,
+    // "noFallthroughCasesInSwitch": true, // eslint
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // ======== Modules ========
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+
+    // ======== Interop Constraints ========
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    // ======== Others ========
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "target": "ESNext"
+  }
+}

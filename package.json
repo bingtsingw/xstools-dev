@@ -1,8 +1,10 @@
 {
-  "name": "xstools-dev",
+  "name": "@xstools-dev/mono",
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
+    "changeset": "changeset",
+    "check-types": "turbo run check-types",
     "commit": "cz",
     "dev": "turbo run dev",
     "format": "prettier . --check",
