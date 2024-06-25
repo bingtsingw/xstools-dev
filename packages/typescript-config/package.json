@@ -1,5 +1,5 @@
 {
-  "name": "@xstools-dev/ts-config",
+  "name": "@xstools-dev/typescript-config",
   "version": "0.1.0",
   "publishConfig": {
     "access": "public",

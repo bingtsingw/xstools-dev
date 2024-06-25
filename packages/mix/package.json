@@ -3,10 +3,10 @@
   "version": "0.2.0",
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
-    "@xstools-dev/mono-tools": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",
-    "@xstools-dev/script-tools": "workspace:^",
-    "@xstools-dev/ts-config": "workspace:^"
+    "@xstools-dev/tools-mono": "workspace:^",
+    "@xstools-dev/tools-script": "workspace:^",
+    "@xstools-dev/typescript-config": "workspace:^"
   },
   "publishConfig": {
     "access": "public",

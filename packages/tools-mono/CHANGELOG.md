@@ -1,4 +1,4 @@
-# @xstools-dev/mono-tools
+# @xstools-dev/tools-mono
 
 ## 0.3.0
 

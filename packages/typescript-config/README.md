@@ -1,4 +1,4 @@
-# @xstools-dev/ts-config
+# @xstools-dev/typescript-config
 
 ## 参考资料
 

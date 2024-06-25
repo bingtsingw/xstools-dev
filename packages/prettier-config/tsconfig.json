@@ -1,4 +1,4 @@
 {
-  "extends": "@xstools-dev/ts-config/base/tsconfig.json",
+  "extends": "@xstools-dev/typescript-config/base/tsconfig.json",
   "include": ["src"]
 }
