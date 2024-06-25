@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bingtsingw/composite-actions/pnpm-install@v1
+      - run: |
+          pnpm run format
+          pnpm run build
+          pnpm run lint:js
+          pnpm run check-type
+          pnpm run check-mono

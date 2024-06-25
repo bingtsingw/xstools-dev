@@ -6,7 +6,7 @@
     "build": "turbo run build",
     "changeset": "changeset",
     "check-mono": "sherif",
-    "check-types": "turbo run check-types",
+    "check-type": "turbo run check-type",
     "commit": "cz",
     "dev": "turbo run dev",
     "format": "prettier . --check",
