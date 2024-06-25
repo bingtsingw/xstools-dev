@@ -12,6 +12,7 @@
     "dotenvx": "./bin/dotenvx.js",
     "fkill": "./bin/fkill.js",
     "malagu": "./bin/malagu.js",
+    "miniprogram-ci": "./bin/miniprogram-ci.js",
     "tsup": "./bin/tsup.js"
   },
   "files": [
@@ -40,6 +41,7 @@
     "dotenv-cli": "^7.4.2",
     "dotenv-expand": "^11.0.6",
     "fkill-cli": "^8.0.0",
+    "miniprogram-ci": "^2.0.6",
     "tsup": "^8.1.0"
   },
   "publishConfig": {
