@@ -14,7 +14,8 @@
     "lint:js": "turbo run lint:js",
     "lint:js:fix": "turbo run lint:js:fix",
     "prepare": "simple-git-hooks",
-    "publish": "turbo run build && changeset version && changeset publish"
+    "publish": "turbo run build && changeset version && changeset publish",
+    "release": "release-it"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
@@ -46,11 +47,21 @@
     "@xstools-dev/typescript-config": "workspace:^",
     "commitizen": "^4.3.0",
     "lint-staged": "^15.2.7",
+    "release-it": "^17.4.0",
     "sherif": "^0.9.0",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.1.0",
     "turbo": "^2.0.5",
     "typescript": "^5.5.2"
   },
-  "packageManager": "pnpm@9.4.0"
+  "packageManager": "pnpm@9.4.0",
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "github": {
+      "release": true
+    },
+    "git": {
+      "commitMessage": "chore(release): release version ${version}"
+    }
+  }
 }
