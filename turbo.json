@@ -10,6 +10,7 @@
     },
     "lint:js": {},
     "lint:js:fix": {},
-    "check-type": {}
+    "check-type": {},
+    "test": {}
   }
 }

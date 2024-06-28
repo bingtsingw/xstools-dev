@@ -8,7 +8,7 @@
 
     // "allowUnreachableCode": false, // eslint
     // "allowUnusedLabels": false, // eslint
-    "exactOptionalPropertyTypes": true,
+    // "exactOptionalPropertyTypes": true, // 暂不开启
     // "noFallthroughCasesInSwitch": true, // eslint
     "noImplicitOverride": true,
     "noImplicitReturns": true,

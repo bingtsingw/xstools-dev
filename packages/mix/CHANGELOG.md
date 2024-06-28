@@ -1,5 +1,13 @@
 # @xstools-dev/mix
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated dependencies [1c2fcda]
+- Updated dependencies
+  - @xstools-dev/typescript-config@0.2.1
+
 ## 0.3.0
 
 ### Minor Changes

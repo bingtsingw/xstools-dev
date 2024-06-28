@@ -4,9 +4,13 @@
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
-    "changeset": "changeset",
+    "changeset-add": "changeset add",
+    "changeset-publish": "npm run check-publish && changeset publish",
+    "changeset-version": "changeset version",
     "check-mono": "sherif",
+    "check-publish": "npm run build && npm run format && npm run lint:js && npm run check-type && npm run test",
     "check-type": "turbo run check-type",
+    "clean": "del **/dist **/.build **/.swc **/.malagu **/.turbo **/node_modules !node_modules && pnpm install",
     "commit": "cz",
     "dev": "turbo run dev",
     "format": "prettier . --check",
@@ -14,7 +18,7 @@
     "lint:js": "turbo run lint:js",
     "lint:js:fix": "turbo run lint:js:fix",
     "prepare": "simple-git-hooks",
-    "publish": "turbo run build && changeset version && changeset publish"
+    "test": "turbo run test"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
