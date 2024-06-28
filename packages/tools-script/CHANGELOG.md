@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.5.0
+
+### Minor Changes
+
+- 依赖控制规范由^改为~
+
 ## 0.4.0
 
 ### Minor Changes

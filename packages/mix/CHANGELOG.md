@@ -1,5 +1,16 @@
 # @xstools-dev/mix
 
+## 0.3.2
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - @xstools-dev/tools-mono@0.5.0
+  - @xstools-dev/prettier-config@0.5.0
+  - @xstools-dev/eslint-config@0.5.0
+  - @xstools-dev/tools-script@0.5.0
+
 ## 0.3.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/prettier-config",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "license": "MIT",
   "exports": {
     "./base": {
@@ -23,12 +23,12 @@
     "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
-    "prettier": "^3.3.2",
-    "prettier-plugin-multiline-arrays": "^3.0.6",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier-plugin-packagejson": "^2.5.0",
-    "prettier-plugin-prisma": "^5.0.0",
-    "prettier-plugin-tailwindcss": "^0.6.5"
+    "prettier": "~3.3.2",
+    "prettier-plugin-multiline-arrays": "~3.0.6",
+    "prettier-plugin-organize-imports": "~3.2.4",
+    "prettier-plugin-packagejson": "~2.5.0",
+    "prettier-plugin-prisma": "~5.0.0",
+    "prettier-plugin-tailwindcss": "~0.6.5"
   },
   "publishConfig": {
     "access": "public",

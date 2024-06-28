@@ -1,5 +1,12 @@
 # @xstools-dev/tools-mono
 
+## 0.5.0
+
+### Minor Changes
+
+- 移除 knip
+- 依赖控制规范由^改为~
+
 ## 0.4.0
 
 ### Minor Changes

@@ -1,14 +1,12 @@
 {
   "name": "@xstools-dev/tools-mono",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "type": "module",
   "bin": {
     "changeset": "./bin/changeset.js",
     "commitizen": "./bin/commitizen.js",
     "cz": "./bin/git-cz.js",
     "git-cz": "./bin/git-cz.js",
-    "knip": "./bin/knip.js",
-    "knip-bun": "./bin/knip-bun.js",
     "lint-staged": "./bin/lint-staged.js",
     "sherif": "./bin/sherif.js",
     "simple-git-hooks": "./bin/simple-git-hooks.js",
@@ -23,16 +21,15 @@
     "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
-    "@changesets/cli": "^2.27.6",
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "knip": "^5.22.3",
-    "lint-staged": "^15.2.7",
-    "sherif": "^0.9.0",
-    "simple-git-hooks": "^2.11.1",
-    "turbo": "^2.0.5"
+    "@changesets/cli": "~2.27.6",
+    "@commitlint/cli": "~19.3.0",
+    "@commitlint/config-conventional": "~19.2.2",
+    "commitizen": "~4.3.0",
+    "cz-conventional-changelog": "~3.3.0",
+    "lint-staged": "~15.2.7",
+    "sherif": "~0.9.0",
+    "simple-git-hooks": "~2.11.1",
+    "turbo": "~2.0.5"
   },
   "publishConfig": {
     "access": "public",
