@@ -8,6 +8,7 @@
     "cz": "./bin/git-cz.js",
     "git-cz": "./bin/git-cz.js",
     "lint-staged": "./bin/lint-staged.js",
+    "release-it": "./bin/release-it.js",
     "sherif": "./bin/sherif.js",
     "simple-git-hooks": "./bin/simple-git-hooks.js",
     "turbo": "./bin/turbo.js"
@@ -25,9 +26,11 @@
     "@changesets/cli": "~2.27.6",
     "@commitlint/cli": "~19.3.0",
     "@commitlint/config-conventional": "~19.2.2",
+    "@release-it/conventional-changelog": "~8.0.1",
     "commitizen": "~4.3.0",
     "cz-conventional-changelog": "~3.3.0",
     "lint-staged": "~15.2.7",
+    "release-it": "~17.4.0",
     "sherif": "~0.9.0",
     "simple-git-hooks": "~2.11.1",
     "turbo": "~2.0.6"
