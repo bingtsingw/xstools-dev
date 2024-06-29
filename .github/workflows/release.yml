@@ -12,6 +12,8 @@ jobs:
 
       - uses: bingtsingw/composite-actions/pnpm-install@v1
 
+      - run: pnpm run build
+
       - uses: changesets/action@v1
         with:
           publish: pnpm changeset-publish
