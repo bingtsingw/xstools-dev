@@ -13,6 +13,7 @@
     "fkill": "./bin/fkill.js",
     "malagu": "./bin/malagu.js",
     "miniprogram-ci": "./bin/miniprogram-ci.js",
+    "release": "./bin/release-it.js",
     "tsup": "./bin/tsup.js"
   },
   "files": [
