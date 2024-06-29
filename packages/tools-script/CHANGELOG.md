@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.5.1
+
+### Patch Changes
+
+- upgrade deps
+
 ## 0.5.0
 
 ### Minor Changes

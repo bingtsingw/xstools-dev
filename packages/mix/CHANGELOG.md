@@ -1,5 +1,13 @@
 # @xstools-dev/mix
 
+## 0.3.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @xstools-dev/tools-script@0.5.1
+  - @xstools-dev/tools-mono@0.5.1
+
 ## 0.3.2
 
 ### Patch Changes
