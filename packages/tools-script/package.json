@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/tools-script",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -13,7 +13,8 @@
     "fkill": "./bin/fkill.js",
     "malagu": "./bin/malagu.js",
     "miniprogram-ci": "./bin/miniprogram-ci.js",
-    "tsup": "./bin/tsup.js"
+    "tsup": "./bin/tsup.js",
+    "wesvg": "./bin/wesvg.js"
   },
   "files": [
     "bin",
@@ -33,6 +34,7 @@
   "dependencies": {
     "@dotenvx/dotenvx": "~1.1.0",
     "@malagu/cli": "2.56.0",
+    "@wesvg/cli": "^0.2.0",
     "babel-plugin-import": "~1.13.8",
     "chokidar": "~3.6.0",
     "del-cli": "~5.1.0",

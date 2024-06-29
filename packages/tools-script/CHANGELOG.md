@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.6.0
+
+### Minor Changes
+
+- add @wesvg/cli
+
 ## 0.5.1
 
 ### Patch Changes
