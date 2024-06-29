@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/tools-mono",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "type": "module",
   "bin": {
     "changeset": "./bin/changeset.js",
@@ -21,6 +21,7 @@
     "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
+    "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "~2.27.6",
     "@commitlint/cli": "~19.3.0",
     "@commitlint/config-conventional": "~19.2.2",

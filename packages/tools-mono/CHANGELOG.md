@@ -1,5 +1,11 @@
 # @xstools-dev/tools-mono
 
+## 0.6.0
+
+### Minor Changes
+
+- add @changesets/changelog-github
+
 ## 0.5.1
 
 ### Patch Changes
