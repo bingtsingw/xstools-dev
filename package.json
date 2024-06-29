@@ -18,7 +18,6 @@
     "lint:js": "turbo run lint:js",
     "lint:js:fix": "turbo run lint:js:fix",
     "prepare": "simple-git-hooks",
-    "release": "release-it",
     "test": "turbo run test"
   },
   "simple-git-hooks": {
