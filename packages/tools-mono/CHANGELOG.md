@@ -1,5 +1,11 @@
 # @xstools-dev/tools-mono
 
+## 0.7.0
+
+### Minor Changes
+
+- [`44ac4f1`](https://github.com/bingtsingw/xstools-dev/commit/44ac4f144321e37cba2f113b38656459c0408d58) Thanks [@bingtsingw](https://github.com/bingtsingw)! - add release-it
+
 ## 0.6.0
 
 ### Minor Changes
