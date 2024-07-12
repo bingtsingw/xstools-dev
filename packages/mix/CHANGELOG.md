@@ -1,5 +1,17 @@
 # @xstools-dev/mix
 
+## 0.5.0
+
+### Minor Changes
+
+- upgrade dotenvx
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @xstools-dev/tools-script@0.8.0
+  - @xstools-dev/eslint-config@0.6.1
+
 ## 0.4.0
 
 ### Minor Changes

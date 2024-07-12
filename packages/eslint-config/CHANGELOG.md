@@ -1,5 +1,11 @@
 # @xstools-dev/eslint-config
 
+## 0.6.1
+
+### Patch Changes
+
+- upgrade deps
+
 ## 0.6.0
 
 ### Minor Changes

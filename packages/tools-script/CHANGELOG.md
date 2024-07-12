@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.8.0
+
+### Minor Changes
+
+- upgrade dotenvx
+
 ## 0.7.0
 
 ### Minor Changes
