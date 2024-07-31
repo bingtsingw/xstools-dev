@@ -30,10 +30,10 @@
     "commitizen": "~4.3.0",
     "cz-conventional-changelog": "~3.3.0",
     "lint-staged": "~15.2.7",
-    "release-it": "~17.5.0",
+    "release-it": "~17.6.0",
     "sherif": "~0.10.0",
     "simple-git-hooks": "~2.11.1",
-    "turbo": "~2.0.6"
+    "turbo": "~2.0.10"
   },
   "publishConfig": {
     "access": "public",
