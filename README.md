@@ -13,4 +13,18 @@
 
 ## 如何使用
 
-在项目跟目录安装`@xstools-dev/mix`, 然后就可以直接使用各种dev工具和配置, 本项目就是使用`@xstools-dev/mix`来配置自己的.
+1. 配置`.npmrc`文件:
+
+```
+public-hoist-pattern[]=*eslint*
+public-hoist-pattern[]=*commitlint*
+public-hoist-pattern[]=*prettier*
+public-hoist-pattern[]=*xstools-dev*
+
+```
+
+2. 在项目根目录安装`@xstools-dev/mix`, 然后就可以直接使用各种dev工具和配置, 本项目就是使用`@xstools-dev/mix`来配置自己的.
+
+```shell
+pnpm i @xstools-dev/mix -D
+```
