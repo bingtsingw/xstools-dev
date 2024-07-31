@@ -32,7 +32,6 @@
     "@babel/preset-react": "~7.24.7",
     "@typescript-eslint/eslint-plugin": "~7.18.0",
     "@typescript-eslint/parser": "~7.18.0",
-    "babel-preset-taro": "~3.6.34",
     "eslint": "~8.57.0",
     "eslint-config-alloy": "~5.1.2",
     "eslint-config-prettier": "~9.1.0",
@@ -41,8 +40,7 @@
     "eslint-plugin-prettier": "~5.2.1",
     "eslint-plugin-react": "~7.35.0",
     "eslint-plugin-react-hooks": "~4.6.2",
-    "eslint-plugin-react-refresh": "~0.4.9",
-    "eslint-plugin-taro": "~3.3.20"
+    "eslint-plugin-react-refresh": "~0.4.9"
   },
   "devDependencies": {
     "@types/eslint": "^8.56.10"
