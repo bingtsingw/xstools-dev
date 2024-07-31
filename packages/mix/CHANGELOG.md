@@ -1,5 +1,19 @@
 # @xstools-dev/mix
 
+## 0.6.0
+
+### Minor Changes
+
+- [`54b3533`](https://github.com/bingtsingw/xstools-dev/commit/54b3533b6f0e56a84b6b846f547d7ea93433b4f6) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
+### Patch Changes
+
+- Updated dependencies [[`54b3533`](https://github.com/bingtsingw/xstools-dev/commit/54b3533b6f0e56a84b6b846f547d7ea93433b4f6)]:
+  - @xstools-dev/prettier-config@0.7.0
+  - @xstools-dev/eslint-config@0.7.0
+  - @xstools-dev/tools-script@0.9.0
+  - @xstools-dev/tools-mono@0.9.0
+
 ## 0.5.0
 
 ### Minor Changes
