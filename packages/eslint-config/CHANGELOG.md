@@ -1,5 +1,11 @@
 # @xstools-dev/eslint-config
 
+## 0.8.0
+
+### Minor Changes
+
+- [`3270d2b`](https://github.com/bingtsingw/xstools-dev/commit/3270d2b1633a29e5fc3b784139ff3db254bf625f) Thanks [@bingtsingw](https://github.com/bingtsingw)! - remove eslint-plugin-taro and babel-preset-taro
+
 ## 0.7.0
 
 ### Minor Changes
