@@ -1,5 +1,11 @@
 # @xstools-dev/tools-mono
 
+## 0.9.1
+
+### Patch Changes
+
+- [`6fad283`](https://github.com/bingtsingw/xstools-dev/commit/6fad28336e8ca73de258b368f428ff7326866f9f) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade patch deps
+
 ## 0.9.0
 
 ### Minor Changes
