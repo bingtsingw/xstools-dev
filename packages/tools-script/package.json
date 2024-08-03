@@ -44,7 +44,7 @@
     "dotenv-expand": "~11.0.6",
     "fkill-cli": "~8.0.0",
     "miniprogram-ci": "~2.0.8",
-    "tsup": "~8.2.3"
+    "tsup": "~8.2.4"
   },
   "publishConfig": {
     "access": "public",
