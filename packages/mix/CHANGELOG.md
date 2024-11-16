@@ -1,5 +1,19 @@
 # @xstools-dev/mix
 
+## 0.8.0
+
+### Minor Changes
+
+- [`e90f0f4`](https://github.com/bingtsingw/xstools-dev/commit/e90f0f4f6f73b7e845b188a97fd2ac9c9b1a19c9) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps && support typescript 5.6
+
+### Patch Changes
+
+- Updated dependencies [[`86df80e`](https://github.com/bingtsingw/xstools-dev/commit/86df80e76cf2f2f21cb78e74abbec34e5ba79873), [`0e0a7b4`](https://github.com/bingtsingw/xstools-dev/commit/0e0a7b4f5373b7acd7374df69fff10a0c25307bb), [`0e0a7b4`](https://github.com/bingtsingw/xstools-dev/commit/0e0a7b4f5373b7acd7374df69fff10a0c25307bb)]:
+  - @xstools-dev/tools-script@0.10.0
+  - @xstools-dev/tools-mono@0.10.0
+  - @xstools-dev/prettier-config@0.8.0
+  - @xstools-dev/eslint-config@0.9.0
+
 ## 0.7.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @xstools-dev/prettier-config
 
+## 0.8.0
+
+### Minor Changes
+
+- [`0e0a7b4`](https://github.com/bingtsingw/xstools-dev/commit/0e0a7b4f5373b7acd7374df69fff10a0c25307bb) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
 ## 0.7.0
 
 ### Minor Changes
