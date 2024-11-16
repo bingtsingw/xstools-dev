@@ -40,8 +40,8 @@
   },
   "prettier": "@xstools-dev/prettier-config/base",
   "devDependencies": {
-    "@types/bun": "^1.1.12",
-    "@types/node": "^22.8.6",
+    "@types/bun": "^1.1.13",
+    "@types/node": "^22.9.0",
     "@xstools-dev/mix": "workspace:^",
     "typescript": "^5.6.3"
   },
