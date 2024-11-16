@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/tools-script",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
