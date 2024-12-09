@@ -1,5 +1,16 @@
 # @xstools-dev/mix
 
+## 0.11.0
+
+### Minor Changes
+
+- [`ca8d7bb`](https://github.com/bingtsingw/xstools-dev/commit/ca8d7bbffeb5e014b1220e429041aec4ae2c18c4) Thanks [@bingtsingw](https://github.com/bingtsingw)! - remove fkill-cli && add port-client
+
+### Patch Changes
+
+- Updated dependencies [[`ca8d7bb`](https://github.com/bingtsingw/xstools-dev/commit/ca8d7bbffeb5e014b1220e429041aec4ae2c18c4)]:
+  - @xstools-dev/tools-script@0.13.0
+
 ## 0.10.0
 
 ### Minor Changes
