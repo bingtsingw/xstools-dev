@@ -1,6 +1,6 @@
 {
   "name": "@xstools-dev/mix",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",

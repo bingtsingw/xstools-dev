@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.12.0
+
+### Minor Changes
+
+- [`c460b08`](https://github.com/bingtsingw/xstools-dev/commit/c460b0880a5ac568fbb25bd7609ccbfb0b49b046) Thanks [@bingtsingw](https://github.com/bingtsingw)! - 修改detect-port导出方式
+
 ## 0.11.1
 
 ### Patch Changes
