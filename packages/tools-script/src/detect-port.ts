@@ -1,1 +1,1 @@
-export * as detectPort from 'detect-port';
+export * from 'detect-port';
