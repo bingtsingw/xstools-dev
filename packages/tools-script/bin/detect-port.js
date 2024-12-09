@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-import 'detect-port/bin/detect-port.js';
+import 'detect-port/dist/esm/bin/detect-port.js';
