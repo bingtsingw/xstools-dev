@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.11.1
+
+### Patch Changes
+
+- [`d4c4b66`](https://github.com/bingtsingw/xstools-dev/commit/d4c4b66e135f68f809e6d0933020f55722c5f527) Thanks [@bingtsingw](https://github.com/bingtsingw)! - update detect-port import path
+
 ## 0.11.0
 
 ### Minor Changes
