@@ -1,5 +1,12 @@
 # @xstools-dev/mix
 
+## 0.9.1
+
+### Patch Changes
+
+- Updated dependencies [[`d4c4b66`](https://github.com/bingtsingw/xstools-dev/commit/d4c4b66e135f68f809e6d0933020f55722c5f527)]:
+  - @xstools-dev/tools-script@0.11.1
+
 ## 0.9.0
 
 ### Minor Changes
