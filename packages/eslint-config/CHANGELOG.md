@@ -1,5 +1,11 @@
 # @xstools-dev/eslint-config
 
+## 0.10.1
+
+### Patch Changes
+
+- [`fe78725`](https://github.com/bingtsingw/xstools-dev/commit/fe78725b769c7c9ef3b650492d9cf9f2491874dd) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
 ## 0.10.0
 
 ### Minor Changes
