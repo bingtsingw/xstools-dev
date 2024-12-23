@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.15.0
+
+### Minor Changes
+
+- [`e1215f2`](https://github.com/bingtsingw/xstools-dev/commit/e1215f2f6654a101f1c946a8ca1c90aa4838896b) Thanks [@bingtsingw](https://github.com/bingtsingw)! - re-add dotenvLoad
+
 ## 0.14.0
 
 ### Minor Changes
