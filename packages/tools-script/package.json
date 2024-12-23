@@ -7,7 +7,6 @@
   "types": "./dist/index.d.ts",
   "bin": {
     "del": "./bin/del.js",
-    "dotenv": "./bin/dotenv.js",
     "dotenvx": "./bin/dotenvx.js",
     "malagu": "./bin/malagu.js",
     "miniprogram-ci": "./bin/miniprogram-ci.js",
@@ -25,7 +24,8 @@
     "check-type": "tsc --noEmit",
     "dev": "tsup --watch",
     "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
-    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "bun test"
   },
   "eslintConfig": {
     "extends": "@xstools-dev/eslint-config/base"
@@ -37,10 +37,6 @@
     "babel-plugin-import": "~1.13.8",
     "chokidar": "~4.0.1",
     "del-cli": "~6.0.0",
-    "detect-port": "~2.1.0",
-    "dotenv": "~16.4.7",
-    "dotenv-cli": "~7.4.4",
-    "dotenv-expand": "~12.0.1",
     "miniprogram-ci": "~2.0.10",
     "port-client": "^1.4.5",
     "tsup": "~8.3.5"

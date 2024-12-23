@@ -184,18 +184,6 @@ importers:
       del-cli:
         specifier: ~6.0.0
         version: 6.0.0
-      detect-port:
-        specifier: ~2.1.0
-        version: 2.1.0
-      dotenv:
-        specifier: ~16.4.7
-        version: 16.4.7
-      dotenv-cli:
-        specifier: ~7.4.4
-        version: 7.4.4
-      dotenv-expand:
-        specifier: ~12.0.1
-        version: 12.0.1
       miniprogram-ci:
         specifier: ~2.0.10
         version: 2.0.10(eslint@8.57.1)
@@ -2303,10 +2291,6 @@ packages:
   add-stream@1.0.0:
     resolution: {integrity: sha512-qQLMr+8o0WC4FZGQTcJiKBVC59JylcPSrTtk6usvmIDFUOCKegapy1VHQwRbFMOFyb/inzUVqHs+eMYKDM1YeQ==}
 
-  address@2.0.3:
-    resolution: {integrity: sha512-XNAb/a6TCqou+TufU8/u11HCu9x1gYvOoxLwtlXgIqmkrYQADVv6ljyW2zwiPhHz9R1gItAWpuDrdJMmrOBFEA==}
-    engines: {node: '>= 16.0.0'}
-
   adm-zip@0.5.16:
     resolution: {integrity: sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==}
     engines: {node: '>=12.0'}
@@ -3597,11 +3581,6 @@ packages:
     resolution: {integrity: sha512-qE3Veg1YXzGHQhlA6jzebZN2qVf6NX+A7m7qlhCGG30dJixrAQhYOsJjsnBjJkCSmuOPpCk30145fr8FV0bzog==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  detect-port@2.1.0:
-    resolution: {integrity: sha512-epZuWb/6Q62L+nDHJc/hQAqf8pylsqgk3BpZXVBx1CDnr3nkrVNn73Uu1rXcFzkNcc+hkP3whuOg7JZYaQB65Q==}
-    engines: {node: '>= 16.0.0'}
-    hasBin: true
-
   dezalgo@1.0.4:
     resolution: {integrity: sha512-rXSP0bf+5n0Qonsb+SVVfNfIsimO4HEtmnIpPHY8Q1UCzKlQrDMfdobr8nJOOsRgWCyMRqeSBQzmWUMq7zvVig==}
 
@@ -3652,18 +3631,6 @@ packages:
   dot-prop@9.0.0:
     resolution: {integrity: sha512-1gxPBJpI/pcjQhKgIU91II6Wkay+dLcN3M6rf2uwP8hRur3HtQXjVrdAK3sjC0piaEuxzMwjXChcETiJl47lAQ==}
     engines: {node: '>=18'}
-
-  dotenv-cli@7.4.4:
-    resolution: {integrity: sha512-XkBYCG0tPIes+YZr4SpfFv76SQrV/LeCE8CI7JSEMi3VR9MvTihCGTOtbIexD6i2mXF+6px7trb1imVCXSNMDw==}
-    hasBin: true
-
-  dotenv-expand@10.0.0:
-    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
-    engines: {node: '>=12'}
-
-  dotenv-expand@12.0.1:
-    resolution: {integrity: sha512-LaKRbou8gt0RNID/9RoI+J2rvXsBRPMV7p+ElHlPhcSARbCPDYcYG2s1TIzAfWv4YSgyY5taidWzzs31lNV3yQ==}
-    engines: {node: '>=12'}
 
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
@@ -10428,8 +10395,6 @@ snapshots:
 
   add-stream@1.0.0: {}
 
-  address@2.0.3: {}
-
   adm-zip@0.5.16: {}
 
   agent-base@7.1.1:
@@ -12181,10 +12146,6 @@ snapshots:
 
   detect-newline@4.0.1: {}
 
-  detect-port@2.1.0:
-    dependencies:
-      address: 2.0.3
-
   dezalgo@1.0.4:
     dependencies:
       asap: 2.0.6
@@ -12239,19 +12200,6 @@ snapshots:
   dot-prop@9.0.0:
     dependencies:
       type-fest: 4.26.1
-
-  dotenv-cli@7.4.4:
-    dependencies:
-      cross-spawn: 7.0.6
-      dotenv: 16.4.7
-      dotenv-expand: 10.0.0
-      minimist: 1.2.8
-
-  dotenv-expand@10.0.0: {}
-
-  dotenv-expand@12.0.1:
-    dependencies:
-      dotenv: 16.4.7
 
   dotenv@16.4.7: {}
 
