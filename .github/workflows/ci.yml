@@ -16,4 +16,8 @@ jobs:
       - uses: bingtsingw/composite-actions/pnpm-install@v1
       - run: |
           pnpm run check-publish
+          pnpm run format
           pnpm run check-mono
+          pnpm run lint:js
+          pnpm run check-type
+          pnpm run test
