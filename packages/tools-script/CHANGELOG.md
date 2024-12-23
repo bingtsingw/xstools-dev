@@ -1,5 +1,13 @@
 # @xstools-dev/tools-script
 
+## 0.14.0
+
+### Minor Changes
+
+- [`3a3da33`](https://github.com/bingtsingw/xstools-dev/commit/3a3da33fd8c6332793ed998fb65666d44e7457c7) Thanks [@bingtsingw](https://github.com/bingtsingw)! - remove dotenv, dotenv-cli, dotenv-expand, detect-port; export dotenvx
+
+- [`1209fbb`](https://github.com/bingtsingw/xstools-dev/commit/1209fbb894323d3d7e53fc792e9e2c78f1774de7) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
 ## 0.13.1
 
 ### Patch Changes
