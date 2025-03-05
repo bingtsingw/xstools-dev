@@ -1,5 +1,12 @@
 # @xstools-dev/mix
 
+## 0.13.1
+
+### Patch Changes
+
+- Updated dependencies [[`4e5f6e3`](https://github.com/bingtsingw/xstools-dev/commit/4e5f6e3e97840d20ebb694b987e702ce722a6b13)]:
+  - @xstools-dev/eslint-config@0.13.0
+
 ## 0.13.0
 
 ### Minor Changes

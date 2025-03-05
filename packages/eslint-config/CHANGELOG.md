@@ -1,5 +1,11 @@
 # @xstools-dev/eslint-config
 
+## 0.13.0
+
+### Minor Changes
+
+- [`4e5f6e3`](https://github.com/bingtsingw/xstools-dev/commit/4e5f6e3e97840d20ebb694b987e702ce722a6b13) Thanks [@bingtsingw](https://github.com/bingtsingw)! - add eslint-plugin-tailwindcss
+
 ## 0.12.0
 
 ### Minor Changes
