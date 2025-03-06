@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.17.0
+
+### Minor Changes
+
+- [`b3ae81a`](https://github.com/bingtsingw/xstools-dev/commit/b3ae81a49477ee61d5306fc673a18cc1df5b6865) Thanks [@bingtsingw](https://github.com/bingtsingw)! - revert dotenvx version
+
 ## 0.16.0
 
 ### Minor Changes
