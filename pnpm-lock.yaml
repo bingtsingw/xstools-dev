@@ -170,8 +170,8 @@ importers:
   packages/tools-script:
     dependencies:
       '@dotenvx/dotenvx':
-        specifier: ~1.38.4
-        version: 1.38.4
+        specifier: 1.32.1
+        version: 1.32.1
       '@malagu/cli':
         specifier: 2.58.0
         version: 2.58.0(@swc/core@1.4.14)(@types/node@22.13.9)
@@ -1278,8 +1278,8 @@ packages:
     resolution: {integrity: sha512-IZFIHGqYvUu3J4sG3gkPQcFTReca0Lv4J6X+gcjt0mHBL6urDXgPmiS1WB6PJzI48jnuDtAd0MIHunVHe7/PsA==}
     engines: {node: '>=22'}
 
-  '@dotenvx/dotenvx@1.38.4':
-    resolution: {integrity: sha512-5rl1W5uMgSMrjluMqOf0FmUC6DILlR9Iy+6WzJIzt8qAON6gSbNZEkDG7MtktbK8g6QgQm9mMwaGgjW4DeU9Gw==}
+  '@dotenvx/dotenvx@1.32.1':
+    resolution: {integrity: sha512-xuTL8XLFkC0B0xHQzBPROY6WBwb9MA0LYBVNIinJ0VD9+gHOIuSyQut0RyDA7tmqxvZQ3C4roZ0HaWvHgX3sZQ==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -9765,7 +9765,7 @@ snapshots:
       luxon: 3.5.0
       type-fest: 4.37.0
 
-  '@dotenvx/dotenvx@1.38.4':
+  '@dotenvx/dotenvx@1.32.1':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7
