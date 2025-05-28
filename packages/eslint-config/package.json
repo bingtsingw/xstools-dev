@@ -10,6 +10,10 @@
     "./taro": {
       "types": "./src/taro.ts",
       "default": "./dist/taro.js"
+    },
+    "./tailwind": {
+      "types": "./src/tailwind.ts",
+      "default": "./dist/tailwind.js"
     }
   },
   "files": [
