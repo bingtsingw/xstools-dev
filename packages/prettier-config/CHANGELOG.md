@@ -1,5 +1,15 @@
 # @xstools-dev/prettier-config
 
+## 0.12.0
+
+### Minor Changes
+
+- [`d00553d`](https://github.com/bingtsingw/xstools-dev/commit/d00553dc85389f3d6df4985091eea49ffc75b741) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
+### Patch Changes
+
+- [`d751218`](https://github.com/bingtsingw/xstools-dev/commit/d751218bceff480674245512e703d0b8135d733d) Thanks [@bingtsingw](https://github.com/bingtsingw)! - prettier-plugin-multiline-arrays not work
+
 ## 0.11.0
 
 ### Minor Changes
