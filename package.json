@@ -41,9 +41,9 @@
   "prettier": "@xstools-dev/prettier-config/base",
   "devDependencies": {
     "@types/bun": "^1.2.19",
-    "@types/node": "^24.1.0",
+    "@types/node": "^24.2.1",
     "@xstools-dev/mix": "workspace:^",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   },
   "packageManager": "pnpm@10.13.1",
   "pnpm": {
