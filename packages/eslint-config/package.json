@@ -10,6 +10,10 @@
     "./taro": {
       "types": "./src/taro.ts",
       "default": "./dist/taro.js"
+    },
+    "./tailwind": {
+      "types": "./src/tailwind.ts",
+      "default": "./dist/tailwind.js"
     }
   },
   "files": [
@@ -45,6 +49,9 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.56.12"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.4.0"
   },
   "publishConfig": {
     "access": "public",
