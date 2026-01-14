@@ -1,6 +1,11 @@
 {
   "name": "@xstools-dev/mix",
   "version": "0.17.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingtsingw/xstools-dev.git",
+    "directory": "packages/mix"
+  },
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",

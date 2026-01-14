@@ -1,6 +1,12 @@
 {
   "name": "@xstools-dev/typescript-config",
   "version": "0.2.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingtsingw/xstools-dev.git",
+    "directory": "packages/typescript-config"
+  },
+  "license": "MIT",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

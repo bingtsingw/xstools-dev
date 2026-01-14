@@ -1,6 +1,11 @@
 {
   "name": "@xstools-dev/tools-script",
   "version": "0.20.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingtsingw/xstools-dev.git",
+    "directory": "packages/tools-script"
+  },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",

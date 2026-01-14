@@ -1,6 +1,11 @@
 {
   "name": "@xstools-dev/mrm-preset",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingtsingw/xstools-dev.git",
+    "directory": "packages/mrm-preset"
+  },
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
