@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.20.0
+
+### Minor Changes
+
+- [`89fb3e3`](https://github.com/bingtsingw/xstools-dev/commit/89fb3e3f41fa9b5376e930e29d0ef21da847cedb) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
 ## 0.19.0
 
 ### Minor Changes
