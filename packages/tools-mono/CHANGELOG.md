@@ -1,5 +1,11 @@
 # @xstools-dev/tools-mono
 
+## 0.18.0
+
+### Minor Changes
+
+- [`3aa98b4`](https://github.com/bingtsingw/xstools-dev/commit/3aa98b4328ec935925dee9581e8afb20413f9278) Thanks [@bingtsingw](https://github.com/bingtsingw)! - npm trusted publishing
+
 ## 0.17.0
 
 ### Minor Changes
