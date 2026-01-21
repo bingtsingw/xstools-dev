@@ -1,5 +1,11 @@
 # @xstools-dev/eslint-config
 
+## 0.18.1
+
+### Patch Changes
+
+- [`e5b256a`](https://github.com/bingtsingw/xstools-dev/commit/e5b256ad0b95c600a270f2395d33b072ab91394b) Thanks [@bingtsingw](https://github.com/bingtsingw)! - add rules
+
 ## 0.18.0
 
 ### Minor Changes
