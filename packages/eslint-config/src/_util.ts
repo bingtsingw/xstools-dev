@@ -5,6 +5,12 @@ export const baseConfig: Linter.Config = {
   ignorePatterns: ['dist', 'build', 'out'],
   rules: {
     '@typescript-eslint/consistent-type-assertions': 'off',
+    '@typescript-eslint/no-empty-interface': [
+      'error',
+      {
+        allowSingleExtends: true,
+      },
+    ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
