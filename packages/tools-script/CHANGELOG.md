@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.22.1
+
+### Patch Changes
+
+- [`e3052f1`](https://github.com/bingtsingw/xstools-dev/commit/e3052f13768d98cfe7ee1768d230f432b5b848c6) Thanks [@bingtsingw](https://github.com/bingtsingw)! - export bin: s
+
 ## 0.22.0
 
 ### Minor Changes
