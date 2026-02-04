@@ -1,5 +1,14 @@
 # @xstools-dev/mix
 
+## 0.19.2
+
+### Patch Changes
+
+- [`1f537dd`](https://github.com/bingtsingw/xstools-dev/commit/1f537dd27f3040c2a4893d49a857364135f6f654) Thanks [@bingtsingw](https://github.com/bingtsingw)! - lock eslint-plugin-react-refresh to 0.4.26
+
+- Updated dependencies [[`1f537dd`](https://github.com/bingtsingw/xstools-dev/commit/1f537dd27f3040c2a4893d49a857364135f6f654)]:
+  - @xstools-dev/eslint-config@0.18.3
+
 ## 0.19.1
 
 ### Patch Changes
