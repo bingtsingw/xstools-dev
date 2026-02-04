@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.22.0
+
+### Minor Changes
+
+- [`5bb124b`](https://github.com/bingtsingw/xstools-dev/commit/5bb124b912857dbe4bb9df552396336fc170f237) Thanks [@bingtsingw](https://github.com/bingtsingw)! - add @serverless-devs/s
+
 ## 0.21.0
 
 ### Minor Changes
