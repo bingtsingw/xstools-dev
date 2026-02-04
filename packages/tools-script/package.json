@@ -16,6 +16,7 @@
     "malagu": "./bin/malagu.js",
     "miniprogram-ci": "./bin/miniprogram-ci.js",
     "port-client": "./bin/port-client.js",
+    "s": "./bin/s.js",
     "tsup": "./bin/tsup.js",
     "wesvg": "./bin/wesvg.js"
   },
