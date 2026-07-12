@@ -32,7 +32,7 @@
     "@changesets/cli": "~2.29.8",
     "@commitlint/cli": "~20.4.1",
     "@commitlint/config-conventional": "~20.4.1",
-    "@release-it/conventional-changelog": "~10.0.4",
+    "@release-it/conventional-changelog": "~11.0.1",
     "commitizen": "~4.3.1",
     "cz-conventional-changelog": "~3.3.0",
     "lint-staged": "~16.2.7",
