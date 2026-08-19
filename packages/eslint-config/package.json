@@ -32,9 +32,9 @@
     "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
-    "@babel/core": "~7.29.0",
-    "@babel/eslint-parser": "~7.28.6",
-    "@babel/preset-react": "~7.28.5",
+    "@babel/core": "~8.0.1",
+    "@babel/eslint-parser": "~8.0.1",
+    "@babel/preset-react": "~8.0.1",
     "@typescript-eslint/eslint-plugin": "~8.54.0",
     "@typescript-eslint/parser": "~8.54.0",
     "eslint": "~8.57.1",
