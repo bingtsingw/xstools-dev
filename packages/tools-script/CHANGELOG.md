@@ -1,5 +1,11 @@
 # @xstools-dev/tools-script
 
+## 0.23.0
+
+### Minor Changes
+
+- [`3fc6e95`](https://github.com/bingtsingw/xstools-dev/commit/3fc6e957ff7dc60a07f45fa760a5eac94cfdebbb) Thanks [@bingtsingw](https://github.com/bingtsingw)! - remove malagu
+
 ## 0.22.1
 
 ### Patch Changes

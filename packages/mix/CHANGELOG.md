@@ -1,5 +1,17 @@
 # @xstools-dev/mix
 
+## 0.20.0
+
+### Minor Changes
+
+- [`ad36003`](https://github.com/bingtsingw/xstools-dev/commit/ad36003a658674e389a5519ac4ad865591b02a60) Thanks [@bingtsingw](https://github.com/bingtsingw)! - bump version
+
+### Patch Changes
+
+- Updated dependencies [[`ad13b04`](https://github.com/bingtsingw/xstools-dev/commit/ad13b047c25a4cb3fc89dbb6fdb0005c37910e4d), [`3fc6e95`](https://github.com/bingtsingw/xstools-dev/commit/3fc6e957ff7dc60a07f45fa760a5eac94cfdebbb)]:
+  - @xstools-dev/eslint-config@0.19.0
+  - @xstools-dev/tools-script@0.23.0
+
 ## 0.19.2
 
 ### Patch Changes
