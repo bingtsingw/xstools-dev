@@ -12,8 +12,8 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: bingtsingw/composite-actions/pnpm-install@v2
+      - uses: actions/checkout@v7
+      - uses: bingtsingw/composite-actions/node-setup@v3
       - run: |
           pnpm run check-publish
           pnpm run format
