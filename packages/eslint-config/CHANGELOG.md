@@ -1,5 +1,11 @@
 # @xstools-dev/eslint-config
 
+## 0.19.0
+
+### Minor Changes
+
+- [`ad13b04`](https://github.com/bingtsingw/xstools-dev/commit/ad13b047c25a4cb3fc89dbb6fdb0005c37910e4d) Thanks [@bingtsingw](https://github.com/bingtsingw)! - remove eslint-config-taro
+
 ## 0.18.3
 
 ### Patch Changes
