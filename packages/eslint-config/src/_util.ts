@@ -2,6 +2,7 @@ import type { Linter } from 'eslint';
 
 export const baseConfig: Linter.Config = {
   extends: ['alloy', 'alloy/typescript'],
+  plugins: ['import'],
   ignorePatterns: ['dist', 'build', 'out'],
   rules: {
     '@typescript-eslint/consistent-type-assertions': 'off',
@@ -20,13 +21,18 @@ export const baseConfig: Linter.Config = {
         caughtErrorsIgnorePattern: '^_',
       },
     ],
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    'import/first': 'error',
+    'import/no-duplicates': 'error',
+    'import/no-mutable-exports': 'error',
+    'import/no-named-default': 'error',
+    'import/newline-after-import': ['error', { count: 1 }],
   },
   overrides: [
     {
       files: ['*.config.js'],
       rules: {
         '@typescript-eslint/no-require-imports': 'off',
-        'import/no-commonjs': 'off',
       },
     },
     {

@@ -4,18 +4,26 @@ import { baseConfig } from './_util';
 const taro: Linter.Config = {
   ...baseConfig,
   extends: [
-    'taro',
-    'taro/react',
     'alloy',
     'alloy/react',
     'alloy/typescript',
   ],
+  plugins: [...(baseConfig.plugins ?? []), 'react-hooks'],
   rules: {
     ...baseConfig.rules,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'jsx-quotes': [
       'error',
       'prefer-double',
     ],
+  },
+  settings: {
+    ...baseConfig.settings,
+    react: {
+      pragma: 'React',
+      version: 'detect',
+    },
   },
   globals: {
     JSX: true,
