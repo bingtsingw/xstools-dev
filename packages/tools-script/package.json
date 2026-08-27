@@ -47,6 +47,9 @@
     "port-client": "^1.4.5",
     "tsup": "~8.5.1"
   },
+  "devDependencies": {
+    "@xstools-dev/config-ts": "workspace:^"
+  },
   "eslintConfig": {
     "extends": "@xstools-dev/eslint-config/base"
   },

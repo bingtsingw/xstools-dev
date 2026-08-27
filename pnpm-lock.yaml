@@ -241,6 +241,10 @@ importers:
       tsup:
         specifier: ~8.5.1
         version: 8.5.1(@swc/core@1.4.14)(jiti@2.6.1)(postcss@8.5.26)(typescript@5.9.3)(yaml@2.8.1)
+    devDependencies:
+      '@xstools-dev/config-ts':
+        specifier: workspace:^
+        version: link:../config-ts
 
   packages/typescript-config: {}
 
