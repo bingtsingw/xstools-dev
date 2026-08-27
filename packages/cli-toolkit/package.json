@@ -1,0 +1,60 @@
+{
+  "name": "@xstools-dev/cli-toolkit",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingtsingw/xstools-dev.git",
+    "directory": "packages/cli-toolkit"
+  },
+  "bin": {
+    "changeset": "./dist/bin/changeset.js",
+    "czg": "./dist/bin/czg.js",
+    "del": "./dist/bin/del.js",
+    "dotenvx": "./dist/bin/dotenvx.js",
+    "miniprogram-ci": "./dist/bin/miniprogram-ci.js",
+    "port-client": "./dist/bin/port-client.js",
+    "release-it": "./dist/bin/release-it.js",
+    "s": "./dist/bin/s.js",
+    "sherif": "./dist/bin/sherif.js",
+    "turbo": "./dist/bin/turbo.js",
+    "wesvg": "./dist/bin/wesvg.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    "./extends": {
+      "types": "./dist/extends.d.ts",
+      "default": "./dist/extends.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "vp pack && bun run scripts/sync-bin.ts",
+    "check-type": "tsc --noEmit",
+    "dev": "vp pack --watch"
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "~2.29.8",
+    "@dotenvx/dotenvx": "1.32.1",
+    "@release-it/conventional-changelog": "~10.0.4",
+    "@serverless-devs/s": "~3.1.10",
+    "@wesvg/cli": "^0.4.0",
+    "czg": "^1.14.0",
+    "del-cli": "~7.0.0",
+    "miniprogram-ci": "~2.1.26",
+    "port-client": "^1.4.5",
+    "release-it": "~19.2.4",
+    "sherif": "~1.10.0",
+    "turbo": "~2.8.3"
+  },
+  "devDependencies": {
+    "@xstools-dev/config-ts": "workspace:^"
+  }
+}
