@@ -1,12 +1,12 @@
 {
   "name": "@xstools-dev/config-ts",
   "version": "0.0.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bingtsingw/xstools-dev.git",
     "directory": "packages/config-ts"
   },
-  "license": "MIT",
   "files": [
     "common",
     "v5"

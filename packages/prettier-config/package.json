@@ -1,31 +1,32 @@
 {
   "name": "@xstools-dev/prettier-config",
   "version": "0.15.1",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bingtsingw/xstools-dev.git",
     "directory": "packages/prettier-config"
   },
-  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
   "exports": {
     "./base": {
       "types": "./src/base.ts",
       "default": "./dist/base.js"
     }
   },
-  "files": [
-    "dist",
-    "src"
-  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "build": "tsup",
     "check-type": "tsc --noEmit",
     "dev": "tsup --watch",
     "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
     "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
-  },
-  "eslintConfig": {
-    "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
     "prettier": "~3.8.1",
@@ -38,9 +39,8 @@
   "devDependencies": {
     "@xstools-dev/config-ts": "workspace:^"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+  "eslintConfig": {
+    "extends": "@xstools-dev/eslint-config/base"
   },
   "tsup": {
     "entry": [

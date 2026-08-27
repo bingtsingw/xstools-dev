@@ -22,10 +22,7 @@ Add this focused preset only when the project uses React JSX:
 
 ```json
 {
-  "extends": [
-    "@xstools-dev/config-ts/v5/tsconfig.modern.json",
-    "@xstools-dev/config-ts/v5/tsconfig.react.json"
-  ]
+  "extends": ["@xstools-dev/config-ts/v5/tsconfig.modern.json", "@xstools-dev/config-ts/v5/tsconfig.react.json"]
 }
 ```
 

@@ -1,15 +1,12 @@
 {
   "name": "@xstools-dev/tools-script",
   "version": "0.23.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bingtsingw/xstools-dev.git",
     "directory": "packages/tools-script"
   },
-  "license": "MIT",
-  "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "bin": {
     "del": "./bin/del.js",
     "dotenvx": "./bin/dotenvx.js",
@@ -24,6 +21,13 @@
     "src",
     "dist"
   ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "build": "tsup",
     "check-type": "tsc --noEmit",
@@ -31,9 +35,6 @@
     "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
     "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
     "test": "bun test"
-  },
-  "eslintConfig": {
-    "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "1.32.1",
@@ -46,9 +47,8 @@
     "port-client": "^1.4.5",
     "tsup": "~8.5.1"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+  "eslintConfig": {
+    "extends": "@xstools-dev/eslint-config/base"
   },
   "tsup": {
     "entry": [

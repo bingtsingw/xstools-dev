@@ -3,6 +3,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "check": "vp check",
+    "check:fix": "vp check --fix",
     "build": "turbo run build",
     "changeset-add": "changeset add",
     "changeset-publish": "npm run check-publish && changeset publish",
@@ -20,14 +22,15 @@
     "prepare": "vp hooks enable",
     "test": "turbo run test"
   },
-  "prettier": "@xstools-dev/prettier-config/base",
   "devDependencies": {
     "@types/bun": "1.3.14",
     "@types/node": "24.13.3",
+    "@xstools-dev/cli-toolkit": "workspace:^",
     "@xstools-dev/eslint-config": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",
     "typescript": "5.9.3",
     "vite-plus": "^0.3.0"
   },
+  "prettier": "@xstools-dev/prettier-config/base",
   "packageManager": "pnpm@10.34.5"
 }

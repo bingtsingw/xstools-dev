@@ -2,12 +2,12 @@
 
 按需安装的开发配置与 CLI 工具集，该库封装了许多开发环境的工具: 比如`dotenvx`、`del-cli`等，以及Monorepo工程化相关工具: 比如`turbo`、`sherif`、`changesets`等。包的用途：
 
-| 包 | 用途 |
-| --- | --- |
-| `@xstools-dev/prettier-config` | Prettier |
-| `@xstools-dev/eslint-config` | ESLint |
-| `@xstools-dev/config-ts` | TypeScript presets |
-| `@xstools-dev/cli-toolkit` | 统一 CLI 代理（`czg` / `turbo` / `changeset` / `del` …） |
+| 包                             | 用途                                                     |
+| ------------------------------ | -------------------------------------------------------- |
+| `@xstools-dev/prettier-config` | Prettier                                                 |
+| `@xstools-dev/eslint-config`   | ESLint                                                   |
+| `@xstools-dev/config-ts`       | TypeScript presets                                       |
+| `@xstools-dev/cli-toolkit`     | 统一 CLI 代理（`czg` / `turbo` / `changeset` / `del` …） |
 
 ## 为什么进行封装
 

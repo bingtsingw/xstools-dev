@@ -2,8 +2,7 @@ import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
   staged: {
-    '**/*.{js,jsx,ts,tsx,html,css,md,json,prisma}': 'prettier --check',
-    '**/*.{js,jsx,ts,tsx}': 'eslint',
+    '**/*.{js,jsx,ts,tsx,html,css,md,json,prisma}': 'vp check',
   },
   lint: {
     rules: {

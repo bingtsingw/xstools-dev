@@ -36,12 +36,7 @@ export const baseConfig: Linter.Config = {
       },
     },
     {
-      files: [
-        '**/*.test.ts',
-        '**/*.test.js',
-        '**/*.spec.ts',
-        '**/*.spec.js',
-      ],
+      files: ['**/*.test.ts', '**/*.test.js', '**/*.spec.ts', '**/*.spec.js'],
       rules: {
         'max-nested-callbacks': 'off',
       },

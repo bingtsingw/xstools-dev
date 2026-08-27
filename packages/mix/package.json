@@ -6,15 +6,15 @@
     "url": "git+https://github.com/bingtsingw/xstools-dev.git",
     "directory": "packages/mix"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "dependencies": {
     "@xstools-dev/eslint-config": "workspace:^",
     "@xstools-dev/prettier-config": "workspace:^",
     "@xstools-dev/tools-mono": "workspace:^",
     "@xstools-dev/tools-script": "workspace:^",
     "@xstools-dev/typescript-config": "workspace:^"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
   }
 }
