@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../common/tsconfig.base.json",
+  "compilerOptions": {
+    // ======== Modules ========
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "noUncheckedSideEffectImports": true,
+    "verbatimModuleSyntax": true,
+
+    // ======== External Transpilers ========
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "target": "ESNext"
+  }
+}

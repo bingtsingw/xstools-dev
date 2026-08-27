@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // ======== Type Checking ========
+    "strict": true,
+    // "noImplicitAny": true, // strict
+    // "noImplicitThis": true, // strict
+
+    // "allowUnreachableCode": false, // eslint
+    // "allowUnusedLabels": false, // eslint
+    // "exactOptionalPropertyTypes": true, // 暂不开启
+    // "noFallthroughCasesInSwitch": true, // eslint
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // ======== Consistency & Performance ========
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}
