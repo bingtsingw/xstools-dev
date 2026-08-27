@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.56.12",
+    "@xstools-dev/config-ts": "workspace:^",
     "tailwindcss": "^3.4.19"
   },
   "publishConfig": {

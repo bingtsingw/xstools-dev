@@ -14,9 +14,12 @@ importers:
       '@types/node':
         specifier: 24.13.3
         version: 24.13.3
-      '@xstools-dev/mix':
+      '@xstools-dev/eslint-config':
         specifier: workspace:^
-        version: link:packages/mix
+        version: link:packages/eslint-config
+      '@xstools-dev/prettier-config':
+        specifier: workspace:^
+        version: link:packages/prettier-config
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -74,6 +77,9 @@ importers:
       '@types/eslint':
         specifier: ^8.56.12
         version: 8.56.12
+      '@xstools-dev/config-ts':
+        specifier: workspace:^
+        version: link:../config-ts
       tailwindcss:
         specifier: ^3.4.19
         version: 3.4.19(yaml@2.8.1)
@@ -116,6 +122,10 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: 0.6.12
         version: 0.6.12(prettier-plugin-multiline-arrays@4.1.3(prettier@3.8.1))(prettier-plugin-organize-imports@4.3.0(prettier@3.8.1)(typescript@5.9.3))(prettier@3.8.1)
+    devDependencies:
+      '@xstools-dev/config-ts':
+        specifier: workspace:^
+        version: link:../config-ts
 
   packages/tools-mono:
     dependencies:
@@ -4923,14 +4933,6 @@ packages:
 
   fd-slicer@1.1.0:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
-
-  fdir@6.4.3:
-    resolution: {integrity: sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
 
   fdir@6.4.6:
     resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
@@ -10331,10 +10333,10 @@ snapshots:
       dotenv: 16.4.7
       eciesjs: 0.4.14
       execa: 5.1.1
-      fdir: 6.4.3(picomatch@4.0.2)
+      fdir: 6.5.0(picomatch@4.0.7)
       ignore: 5.3.2
       object-treeify: 1.1.33
-      picomatch: 4.0.2
+      picomatch: 4.0.7
       which: 4.0.0
 
   '@ecies/ciphers@0.2.2(@noble/ciphers@1.2.1)':
@@ -14278,10 +14280,6 @@ snapshots:
   fd-slicer@1.1.0:
     dependencies:
       pend: 1.2.0
-
-  fdir@6.4.3(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
 
   fdir@6.4.6(picomatch@4.0.2):
     optionalDependencies:

@@ -35,6 +35,9 @@
     "prettier-plugin-prisma": "5.0.0",
     "prettier-plugin-tailwindcss": "0.6.12"
   },
+  "devDependencies": {
+    "@xstools-dev/config-ts": "workspace:^"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"

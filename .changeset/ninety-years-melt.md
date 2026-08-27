@@ -2,4 +2,4 @@
 '@xstools-dev/config-ts': minor
 ---
 
-add package
+Add TypeScript preset package.

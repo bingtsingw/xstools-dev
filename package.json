@@ -11,30 +11,21 @@
     "check-publish": "npm run build && npm run format && npm run lint:js && npm run check-type && npm run test",
     "check-type": "turbo run check-type",
     "clean": "del **/dist **/.build **/.swc **/.turbo **/node_modules !node_modules",
-    "commit": "cz",
+    "commit": "czg",
     "dev": "turbo run dev",
-    "format": "prettier . --check",
-    "format:fix": "prettier . --write",
-    "lint:js": "turbo run lint:js",
-    "lint:js:fix": "turbo run lint:js:fix",
+    "fmt": "prettier . --check",
+    "fmt:fix": "prettier . --write",
+    "lint": "turbo run lint:js",
+    "lint:fix": "turbo run lint:js:fix",
     "prepare": "vp hooks enable",
     "test": "turbo run test"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "prettier": "@xstools-dev/prettier-config/base",
   "devDependencies": {
     "@types/bun": "1.3.14",
     "@types/node": "24.13.3",
-    "@xstools-dev/mix": "workspace:^",
+    "@xstools-dev/eslint-config": "workspace:^",
+    "@xstools-dev/prettier-config": "workspace:^",
     "typescript": "5.9.3",
     "vite-plus": "^0.3.0"
   },
