@@ -52,7 +52,7 @@
     "port-client": "^1.4.5",
     "release-it": "~19.2.4",
     "sherif": "~1.10.0",
-    "turbo": "~2.8.3"
+    "turbo": "~2.9.0"
   },
   "devDependencies": {
     "@xstools-dev/config-ts": "workspace:^"
