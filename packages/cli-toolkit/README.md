@@ -14,7 +14,7 @@ pnpm add -D @xstools-dev/cli-toolkit
 
 `changeset` · `czg` · `del` · `dotenvx` · `miniprogram-ci` · `port-client` · `release-it` · `s` · `sherif` · `turbo` · `wesvg`
 
-每个命令对应 `dist/bin/<name>.js` stub（避免 pnpm 多 bin 共用同一文件时丢失命令名）。
+每个命令对应 `bin/<name>.js` stub（避免 pnpm 多 bin 共用同一文件时丢失命令名）。
 
 ## Library
 

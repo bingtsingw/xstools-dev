@@ -8,19 +8,20 @@
     "directory": "packages/cli-toolkit"
   },
   "bin": {
-    "changeset": "./dist/bin/changeset.js",
-    "czg": "./dist/bin/czg.js",
-    "del": "./dist/bin/del.js",
-    "dotenvx": "./dist/bin/dotenvx.js",
-    "miniprogram-ci": "./dist/bin/miniprogram-ci.js",
-    "port-client": "./dist/bin/port-client.js",
-    "release-it": "./dist/bin/release-it.js",
-    "s": "./dist/bin/s.js",
-    "sherif": "./dist/bin/sherif.js",
-    "turbo": "./dist/bin/turbo.js",
-    "wesvg": "./dist/bin/wesvg.js"
+    "changeset": "./bin/changeset.js",
+    "czg": "./bin/czg.js",
+    "del": "./bin/del.js",
+    "dotenvx": "./bin/dotenvx.js",
+    "miniprogram-ci": "./bin/miniprogram-ci.js",
+    "port-client": "./bin/port-client.js",
+    "release-it": "./bin/release-it.js",
+    "s": "./bin/s.js",
+    "sherif": "./bin/sherif.js",
+    "turbo": "./bin/turbo.js",
+    "wesvg": "./bin/wesvg.js"
   },
   "files": [
+    "bin",
     "dist"
   ],
   "type": "module",
@@ -35,9 +36,10 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "build": "vp pack && bun run scripts/sync-bin.ts",
+    "build": "vp pack",
     "check-type": "tsc --noEmit",
     "dev": "vp pack --watch",
+    "sync-bin": "bun run scripts/sync-bin.ts",
     "test": "pnpm run build && vp test"
   },
   "dependencies": {

@@ -33,9 +33,7 @@ describe('CLI proxies', () => {
     for (const name of names) {
       expect(getTool(name)).toBeDefined();
       expect(getTool(`${name}-unknown`)).toBeUndefined();
-      expect(readFileSync(resolve(packageRoot, packageJson.bin[name]), 'utf8')).toContain(
-        `main(${JSON.stringify(name)});`,
-      );
+      expect(readFileSync(resolve(packageRoot, packageJson.bin[name]), 'utf8')).toContain(`main('${name}');`);
     }
   });
 

@@ -6,8 +6,12 @@ import { TOOLS } from '../src/proxy/tools.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const pkgPath = resolve(root, 'package.json');
-const binDirRel = './dist/bin';
-const binDirAbs = resolve(root, 'dist/bin');
+const binDirRel = './bin';
+const binDirAbs = resolve(root, 'bin');
+
+function toSingleQuotedString(value: string): string {
+  return `'${value.replaceAll('\\', '\\\\').replaceAll("'", "\\'")}'`;
+}
 
 mkdirSync(binDirAbs, { recursive: true });
 
@@ -20,11 +24,11 @@ pkg.bin = {};
 for (const name of Object.keys(TOOLS).sort()) {
   const fileRel = `${binDirRel}/${name}.js`;
   const fileAbs = resolve(root, fileRel);
-  // pnpm shims invoke `node <target>`, so argv[1] is always proxy.js if bins share one file.
-  // Per-command stubs pass the real CLI name into main().
+  // pnpm links these source-controlled stubs during install. Each one passes its
+  // command name explicitly because argv[1] is the shared target path in pnpm shims.
   const code = `#!/usr/bin/env node
-import { main } from '../proxy.js';
-main(${JSON.stringify(name)});
+import { main } from '../dist/proxy.js';
+main(${toSingleQuotedString(name)});
 `;
   writeFileSync(fileAbs, code);
   chmodSync(fileAbs, 0o755);
