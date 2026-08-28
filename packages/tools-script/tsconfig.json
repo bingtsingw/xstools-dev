@@ -1,4 +1,0 @@
-{
-  "extends": "@xstools-dev/config-ts/v5/tsconfig.modern.json",
-  "include": ["src", "vite.config.ts"]
-}
