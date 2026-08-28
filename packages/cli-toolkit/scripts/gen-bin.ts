@@ -37,4 +37,4 @@ main(${toSingleQuotedString(name)});
 
 writeFileSync(pkgPath, `${JSON.stringify(pkg, null, 2)}\n`);
 
-console.log(`[cli-toolkit] synced ${Object.keys(TOOLS).length} bin stubs → ${binDirRel}`);
+console.log(`[cli-toolkit] generated ${Object.keys(TOOLS).length} bin stubs → ${binDirRel}`);

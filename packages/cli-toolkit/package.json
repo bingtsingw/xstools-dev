@@ -38,7 +38,7 @@
   "scripts": {
     "build": "vp pack",
     "dev": "vp pack --watch",
-    "sync-bin": "bun run scripts/sync-bin.ts",
+    "gen-bin": "bun run scripts/gen-bin.ts",
     "test": "vp test"
   },
   "dependencies": {
