@@ -1,5 +1,11 @@
 # @xstools-dev/cli-toolkit
 
+## 0.2.0
+
+### Minor Changes
+
+- [`25554fa`](https://github.com/bingtsingw/xstools-dev/commit/25554faee470d27202bfe35d53ef0bb91e74c39d) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
 ## 0.1.0
 
 ### Minor Changes
