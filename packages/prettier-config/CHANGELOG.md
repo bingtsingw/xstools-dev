@@ -86,4 +86,4 @@
 
 ### Minor Changes
 
-- 93bd680: upgrade deps rename typescript-config, tools-script, tools-mono package
+- 93bd680: 升级依赖与包结构

@@ -1,23 +1,17 @@
 # xstools-dev
 
-按需安装的开发配置与 CLI 工具集，该库封装了许多开发环境的工具: 比如`dotenvx`、`del-cli`等，以及Monorepo工程化相关工具: 比如`turbo`、`sherif`、`changesets`等。包的用途：
+面向 JavaScript、TypeScript 与 Monorepo 项目的共享开发配置和 CLI 工具集。
 
-| 包                             | 用途                                                     |
-| ------------------------------ | -------------------------------------------------------- |
-| `@xstools-dev/prettier-config` | Prettier                                                 |
-| `@xstools-dev/eslint-config`   | ESLint                                                   |
-| `@xstools-dev/config-ts`       | TypeScript presets                                       |
-| `@xstools-dev/cli-toolkit`     | 统一 CLI 代理（`czg` / `turbo` / `changeset` / `del` …） |
+## 包一览
 
-## 为什么进行封装
+| 包                                                           | 用途                               |
+| ------------------------------------------------------------ | ---------------------------------- |
+| [`@xstools-dev/config-ts`](./packages/config-ts)             | TypeScript 严格模式与现代构建预设  |
+| [`@xstools-dev/eslint-config`](./packages/eslint-config)     | ESLint 的基础与 Taro 配置          |
+| [`@xstools-dev/prettier-config`](./packages/prettier-config) | Prettier 基础配置与常用插件        |
+| [`@xstools-dev/cli-toolkit`](./packages/cli-toolkit)         | 常用开发与 Monorepo CLI 的统一入口 |
 
-每次创建新项目都需要安装和配置`eslint`, `prettier`, `typescript`等等, 维护起来很繁琐:
-
-1. 这些配置在多数项目里都几乎一致, 到处复制粘贴带来了许多模板代码
-2. 经常性地升级这些`devDependencies`是一个负担
-3. 要更新一些配置是一个负担, 比如`typescript`新版本`tsconfig`配置改了一项, 需要在各个项目的各个包中去更新.
-
-## 快速开始
+## 安装
 
 ```bash
 pnpm add -D \
@@ -27,14 +21,16 @@ pnpm add -D \
   @xstools-dev/cli-toolkit
 ```
 
-可选 `.npmrc`（本仓仅保留 eslint / prettier hoist）：
+在 pnpm 工作区中，如需让 ESLint 和 Prettier 插件被解析，可加入 `.npmrc`：
 
 ```ini
 public-hoist-pattern[]=*eslint*
 public-hoist-pattern[]=*prettier*
 ```
 
-根 `package.json` 示例：
+## 配置示例
+
+`package.json`：
 
 ```json
 {
@@ -52,7 +48,7 @@ public-hoist-pattern[]=*prettier*
 }
 ```
 
-TypeScript：
+`tsconfig.json`：
 
 ```json
 {
@@ -60,10 +56,4 @@ TypeScript：
 }
 ```
 
-## 废弃包
-
-以下包仅兼容保留，勿用于新项目：
-
-- `@xstools-dev/mix` → 按需安装上表组合
-- `@xstools-dev/tools-mono` / `@xstools-dev/tools-script` → `@xstools-dev/cli-toolkit`
-- `@xstools-dev/typescript-config` → `@xstools-dev/config-ts`
+各包的配置选项和可用命令见对应包目录中的 README。

@@ -1,24 +1,35 @@
 # @xstools-dev/cli-toolkit
 
-开发期间常用的各种 CLI 工具，按命令名转发到真实 bin。
+开发、发布和 Monorepo 维护所需 CLI 的统一入口。安装后可直接在 `package.json` scripts 或命令行中使用对应命令。
 
-## Install
+## 安装
 
 ```bash
 pnpm add -D @xstools-dev/cli-toolkit
 ```
 
-## CLI
+## 命令
 
-安装后可直接使用：
+本包公开的命令由 [`package.json`](./package.json) 中的 `bin` 字段定义；该字段是完整且唯一的命令清单。
 
-`changeset` · `czg` · `del` · `dotenvx` · `miniprogram-ci` · `port-client` · `release-it` · `s` · `sherif` · `turbo` · `wesvg`
+示例：
 
-每个命令对应 `bin/<name>.js` stub（避免 pnpm 多 bin 共用同一文件时丢失命令名）。
+```json
+{
+  "scripts": {
+    "changeset": "changeset",
+    "check-mono": "sherif",
+    "release": "release-it",
+    "build": "turbo run build"
+  }
+}
+```
 
-## Library
+命令由各自的上游工具实现；本包负责提供稳定、统一的命令入口。
 
-仅暴露 `dotenvLoad`：
+## 代码 API
+
+`@xstools-dev/cli-toolkit/extends` 导出 `dotenvLoad`，用于读取指定的环境变量文件并写入 `process.env`：
 
 ```ts
 import { dotenvLoad } from '@xstools-dev/cli-toolkit/extends';
