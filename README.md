@@ -8,25 +8,26 @@
 | ------------------------------------------------------------ | ---------------------------------- |
 | [`@xstools-dev/config-ts`](./packages/config-ts)             | TypeScript 严格模式与现代构建预设  |
 | [`@xstools-dev/eslint-config`](./packages/eslint-config)     | ESLint 的基础与 Taro 配置          |
-| [`@xstools-dev/prettier-config`](./packages/prettier-config) | Prettier 基础配置与常用插件        |
+| [`@xstools-dev/config-prettier`](./packages/config-prettier) | Prettier 基础配置与常用插件        |
 | [`@xstools-dev/cli-toolkit`](./packages/cli-toolkit)         | 常用开发与 Monorepo CLI 的统一入口 |
 
 ## 安装
 
 ```bash
 pnpm add -D \
-  @xstools-dev/prettier-config \
+  @xstools-dev/config-prettier \
   @xstools-dev/eslint-config \
   @xstools-dev/config-ts \
   @xstools-dev/cli-toolkit
 ```
 
-在 pnpm 工作区中，如需让 ESLint 和 Prettier 插件被解析，可加入 `.npmrc`：
+在 pnpm 工作区中，如需让 ESLint 插件被解析，可加入 `.npmrc`：
 
 ```ini
 public-hoist-pattern[]=*eslint*
-public-hoist-pattern[]=*prettier*
 ```
+
+`@xstools-dev/config-prettier` 会从自身解析 Prettier 插件，无需配置 `public-hoist-pattern[]=*prettier*`。它也代理了 `prettier` CLI，可直接执行 `pnpm prettier`，因此使用方不需要额外安装 `prettier`。
 
 ## 配置示例
 
@@ -34,7 +35,7 @@ public-hoist-pattern[]=*prettier*
 
 ```json
 {
-  "prettier": "@xstools-dev/prettier-config/base",
+  "prettier": "@xstools-dev/config-prettier/base",
   "scripts": {
     "commit": "czg",
     "check-mono": "sherif"
@@ -43,7 +44,7 @@ public-hoist-pattern[]=*prettier*
     "@xstools-dev/cli-toolkit": "workspace:^",
     "@xstools-dev/config-ts": "workspace:^",
     "@xstools-dev/eslint-config": "workspace:^",
-    "@xstools-dev/prettier-config": "workspace:^"
+    "@xstools-dev/config-prettier": "workspace:^"
   }
 }
 ```

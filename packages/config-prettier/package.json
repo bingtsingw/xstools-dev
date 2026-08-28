@@ -1,0 +1,51 @@
+{
+  "name": "@xstools-dev/config-prettier",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingtsingw/xstools-dev.git",
+    "directory": "packages/config-prettier"
+  },
+  "bin": {
+    "prettier": "./bin/prettier.cjs"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "src"
+  ],
+  "exports": {
+    "./base": {
+      "types": "./src/base.ts",
+      "default": "./dist/base.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "check-type": "tsc --noEmit",
+    "dev": "vp pack --watch",
+    "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
+    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "dependencies": {
+    "prettier": "~3.8.1",
+    "prettier-plugin-multiline-arrays": "4.1.3",
+    "prettier-plugin-organize-imports": "4.3.0",
+    "prettier-plugin-packagejson": "3.0.0",
+    "prettier-plugin-prisma": "5.0.0",
+    "prettier-plugin-tailwindcss": "0.6.12"
+  },
+  "devDependencies": {
+    "@xstools-dev/config-ts": "workspace:^",
+    "@xstools-dev/eslint-config": "workspace:^",
+    "eslint": "~8.57.1"
+  },
+  "eslintConfig": {
+    "extends": "@xstools-dev/eslint-config/base"
+  }
+}
