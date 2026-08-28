@@ -37,7 +37,8 @@
   "scripts": {
     "build": "vp pack && bun run scripts/sync-bin.ts",
     "check-type": "tsc --noEmit",
-    "dev": "vp pack --watch"
+    "dev": "vp pack --watch",
+    "test": "pnpm run build && vp test"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.5.2",

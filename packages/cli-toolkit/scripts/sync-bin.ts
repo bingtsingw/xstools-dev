@@ -17,7 +17,7 @@ const pkg = JSON.parse(readFileSync(pkgPath, 'utf8')) as {
 };
 
 pkg.bin = {};
-for (const name of Object.keys(TOOLS)) {
+for (const name of Object.keys(TOOLS).sort()) {
   const fileRel = `${binDirRel}/${name}.js`;
   const fileAbs = resolve(root, fileRel);
   // pnpm shims invoke `node <target>`, so argv[1] is always proxy.js if bins share one file.
