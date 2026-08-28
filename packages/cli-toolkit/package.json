@@ -43,19 +43,19 @@
     "test": "vp test"
   },
   "dependencies": {
-    "@changesets/changelog-github": "^0.5.2",
-    "@changesets/cli": "~2.29.8",
-    "@dotenvx/dotenvx": "1.32.1",
-    "@release-it/conventional-changelog": "~10.0.4",
+    "@changesets/changelog-github": "~1.0.0",
+    "@changesets/cli": "~3.0.1",
+    "@dotenvx/dotenvx": "2.22.0",
+    "@release-it/conventional-changelog": "~12.0.0",
     "@serverless-devs/s": "~3.1.10",
     "@wesvg/cli": "^0.4.0",
-    "czg": "^1.14.0",
+    "czg": "~1.14.0",
     "del-cli": "~7.0.0",
-    "miniprogram-ci": "~2.1.26",
-    "port-client": "^1.4.5",
-    "release-it": "~19.2.4",
-    "sherif": "~1.10.0",
-    "turbo": "~2.8.3"
+    "miniprogram-ci": "~2.1.31",
+    "port-client": "~1.4.5",
+    "release-it": "~21.0.2",
+    "sherif": "~1.13.0",
+    "turbo": "~2.10.12"
   },
   "devDependencies": {
     "@xstools-dev/config-ts": "workspace:^"

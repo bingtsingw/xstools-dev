@@ -21,7 +21,7 @@
     "@types/bun": "1.3.14",
     "@types/node": "24.13.3",
     "@xstools-dev/cli-toolkit": "workspace:^",
-    "turbo": "~2.8.3",
+    "turbo": "~2.10.12",
     "typescript": "5.9.3",
     "vite-plus": "^0.3.0"
   },
