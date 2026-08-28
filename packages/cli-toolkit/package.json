@@ -37,7 +37,6 @@
   },
   "scripts": {
     "build": "vp pack",
-    "check-type": "tsc --noEmit",
     "dev": "vp pack --watch",
     "sync-bin": "bun run scripts/sync-bin.ts",
     "test": "vp test"

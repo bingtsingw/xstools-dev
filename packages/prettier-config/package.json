@@ -23,10 +23,7 @@
   },
   "scripts": {
     "build": "vp pack",
-    "check-type": "tsc --noEmit",
-    "dev": "vp pack --watch",
-    "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
-    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix"
+    "dev": "vp pack --watch"
   },
   "dependencies": {
     "prettier": "~3.8.1",
@@ -38,8 +35,5 @@
   },
   "devDependencies": {
     "@xstools-dev/config-ts": "workspace:^"
-  },
-  "eslintConfig": {
-    "extends": "@xstools-dev/eslint-config/base"
   }
 }
