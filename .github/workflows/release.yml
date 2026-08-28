@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v7
-      - uses: bingtsingw/composite-actions/node-setup@v3
+      - uses: bingtsingw/composite-actions/setup-node@e51185c8475a406df2d2d731f4d3ccbb2a8ba6c0
 
       - run: pnpm run build
 

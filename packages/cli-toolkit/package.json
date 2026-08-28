@@ -40,7 +40,7 @@
     "check-type": "tsc --noEmit",
     "dev": "vp pack --watch",
     "sync-bin": "bun run scripts/sync-bin.ts",
-    "test": "pnpm run build && vp test"
+    "test": "vp test"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.5.2",

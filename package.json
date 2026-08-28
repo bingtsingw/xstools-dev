@@ -5,15 +5,15 @@
   "scripts": {
     "check": "vp check",
     "check:fix": "vp check --fix",
+    "check-publish": "npm run build && npm run check && npm run test",
+    "check-mono": "sherif",
+    "dev": "turbo run dev",
     "build": "turbo run build",
     "changeset-add": "changeset add",
     "changeset-publish": "npm run check-publish && changeset publish",
     "changeset-version": "changeset version",
-    "check-mono": "sherif",
-    "check-publish": "npm run build && npm run format && npm run lint:js && npm run check-type && npm run test",
     "clean": "del **/dist **/.build **/.swc **/.turbo **/node_modules !node_modules",
     "commit": "czg",
-    "dev": "turbo run dev",
     "prepare": "vp hooks enable",
     "test": "turbo run test"
   },
