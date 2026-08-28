@@ -12,7 +12,7 @@ const NATIVE_EXTS = new Set(['.exe', '.node', '.bin', '.dylib', '.so', '.dll']);
 
 function getCommandName(argv1 = process.argv[1]): string {
   let name = basename(argv1 ?? '');
-  // Windows shims: tsup.CMD / tsup.ps1
+  // Windows package-manager shims append .CMD or .ps1.
   name = name.replace(/\.(cmd|ps1)$/i, '');
   const ext = extname(name).toLowerCase();
   if (ext === '.js' || ext === '.mjs') {

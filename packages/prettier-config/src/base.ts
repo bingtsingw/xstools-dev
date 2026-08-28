@@ -1,6 +1,4 @@
-import type { Config } from 'prettier';
-
-const base: Config = {
+const base: import('prettier').Config = {
   plugins: [
     'prettier-plugin-packagejson',
     'prettier-plugin-prisma',

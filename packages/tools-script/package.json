@@ -29,9 +29,9 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "vp pack",
     "check-type": "tsc --noEmit",
-    "dev": "tsup --watch",
+    "dev": "vp pack --watch",
     "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
     "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
     "test": "bun test"
@@ -52,16 +52,5 @@
   },
   "eslintConfig": {
     "extends": "@xstools-dev/eslint-config/base"
-  },
-  "tsup": {
-    "entry": [
-      "src/**/*.ts"
-    ],
-    "format": [
-      "esm"
-    ],
-    "dts": true,
-    "clean": true,
-    "minify": true
   }
 }
