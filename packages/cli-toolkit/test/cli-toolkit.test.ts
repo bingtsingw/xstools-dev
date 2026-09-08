@@ -6,8 +6,8 @@ import { spawnSync } from 'node:child_process';
 
 import { afterEach, describe, expect, test } from 'vite-plus/test';
 
-import { dotenvLoad } from '../src/extends/dotenvLoad.js';
-import { getTool, listToolNames } from '../src/proxy/tools.js';
+import { dotenvLoad } from '../src/extends/dotenvLoad';
+import { getTool, listToolNames } from '../src/proxy/tools';
 
 const packageRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const packageJson = JSON.parse(readFileSync(resolve(packageRoot, 'package.json'), 'utf8')) as {

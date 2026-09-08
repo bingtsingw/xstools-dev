@@ -1,1 +1,1 @@
-export { dotenvLoad } from './dotenvLoad.js';
+export { dotenvLoad } from './dotenvLoad';

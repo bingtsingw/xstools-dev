@@ -2,8 +2,7 @@ import { spawn } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { basename, dirname, extname, resolve } from 'node:path';
 import process from 'node:process';
-
-import { getTool, listToolNames } from './tools.js';
+import { getTool, listToolNames } from './tools';
 
 type NodeRequire = ReturnType<typeof createRequire>;
 
