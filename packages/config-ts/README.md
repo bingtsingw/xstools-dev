@@ -33,10 +33,8 @@ TypeScript 6/7 起，`types` 默认变为 `[]`（不再自动载入全部 `node_
 {
   "extends": "@xstools-dev/config-ts/v7/tsconfig.modern.json",
   "compilerOptions": {
-    "types": ["node"],
-    "rootDir": "./src"
-  },
-  "include": ["./src"]
+    "types": ["node"]
+  }
 }
 ```
 

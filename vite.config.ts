@@ -6,6 +6,10 @@ export default defineConfig({
     '**/*.{html,css,md,json,prisma}': 'vp fmt',
   },
   lint: {
+    options: {
+      typeAware: true,
+      typeCheck: true,
+    },
     rules: {
       'no-unused-vars': [
         'error',

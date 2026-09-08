@@ -31,14 +31,21 @@ describe('CLI proxies', () => {
     expect(Object.keys(packageJson.bin).sort()).toEqual(names);
 
     for (const name of names) {
+      const binPath = packageJson.bin[name];
       expect(getTool(name)).toBeDefined();
       expect(getTool(`${name}-unknown`)).toBeUndefined();
-      expect(readFileSync(resolve(packageRoot, packageJson.bin[name]), 'utf8')).toContain(`main('${name}');`);
+      expect(binPath).toBeDefined();
+      if (!binPath) continue;
+      expect(readFileSync(resolve(packageRoot, binPath), 'utf8')).toContain(`main('${name}');`);
     }
   });
 
   test('forwards a command to its resolved executable', () => {
-    const result = spawnSync(process.execPath, [resolve(packageRoot, packageJson.bin.turbo), '--version'], {
+    const turboBin = packageJson.bin['turbo'];
+    expect(turboBin).toBeDefined();
+    if (!turboBin) return;
+
+    const result = spawnSync(process.execPath, [resolve(packageRoot, turboBin), '--version'], {
       encoding: 'utf8',
     });
 
@@ -60,8 +67,8 @@ describe('dotenvLoad', () => {
     try {
       dotenvLoad(envPath);
 
-      expect(process.env.CLI_TOOLKIT_TEST_HOST).toBe('127.0.0.1');
-      expect(process.env.CLI_TOOLKIT_TEST_URL).toBe('http://127.0.0.1:3000');
+      expect(process.env['CLI_TOOLKIT_TEST_HOST']).toBe('127.0.0.1');
+      expect(process.env['CLI_TOOLKIT_TEST_URL']).toBe('http://127.0.0.1:3000');
     } finally {
       rmSync(directory, { force: true, recursive: true });
     }
