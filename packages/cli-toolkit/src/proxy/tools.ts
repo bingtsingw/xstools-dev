@@ -13,10 +13,8 @@ export const TOOLS = {
   // formerly tools-script
   del: { pkg: 'del-cli', bin: 'del' },
   dotenvx: { pkg: '@dotenvx/dotenvx', bin: 'dotenvx' },
-  'miniprogram-ci': { pkg: 'miniprogram-ci', bin: 'miniprogram-ci' },
   'port-client': { pkg: 'port-client', bin: 'port-client' },
   s: { pkg: '@serverless-devs/s', bin: 's' },
-  wesvg: { pkg: '@wesvg/cli', bin: 'wesvg' },
 
   // formerly tools-mono (+ czg)
   changeset: { pkg: '@changesets/cli', bin: 'changeset' },

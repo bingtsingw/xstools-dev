@@ -12,13 +12,11 @@
     "czg": "./bin/czg.js",
     "del": "./bin/del.js",
     "dotenvx": "./bin/dotenvx.js",
-    "miniprogram-ci": "./bin/miniprogram-ci.js",
     "port-client": "./bin/port-client.js",
     "release-it": "./bin/release-it.js",
     "s": "./bin/s.js",
     "sherif": "./bin/sherif.js",
-    "turbo": "./bin/turbo.js",
-    "wesvg": "./bin/wesvg.js"
+    "turbo": "./bin/turbo.js"
   },
   "files": [
     "bin",
@@ -47,10 +45,8 @@
     "@dotenvx/dotenvx": "2.22.0",
     "@release-it/conventional-changelog": "~12.0.0",
     "@serverless-devs/s": "~3.1.10",
-    "@wesvg/cli": "^0.4.0",
     "czg": "~1.14.0",
     "del-cli": "~7.0.0",
-    "miniprogram-ci": "~2.1.31",
     "port-client": "~1.4.5",
     "release-it": "~21.0.2",
     "sherif": "~1.13.0",
