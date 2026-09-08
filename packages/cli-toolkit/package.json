@@ -40,8 +40,8 @@
     "test": "vp test"
   },
   "dependencies": {
-    "@changesets/changelog-github": "~1.0.0",
-    "@changesets/cli": "~3.0.1",
+    "@changesets/changelog-github": "~1.0.1",
+    "@changesets/cli": "~3.0.2",
     "@dotenvx/dotenvx": "2.23.0",
     "@release-it/conventional-changelog": "~12.0.0",
     "@serverless-devs/s": "~3.1.10",
