@@ -9,7 +9,8 @@
   },
   "files": [
     "common",
-    "v5"
+    "v5",
+    "v7"
   ],
   "publishConfig": {
     "access": "public",

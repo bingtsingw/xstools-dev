@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../common/tsconfig.base.json",
+  "compilerOptions": {
+    // ======== Modules ========
+    "module": "Preserve", // TS 6/7 对 bundler 项目推荐 Preserve，而不是 ESNext：不改写 import/export，交给打包器。
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "noUncheckedSideEffectImports": true,
+    "verbatimModuleSyntax": true,
+
+    // ======== External Transpilers ========
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "target": "ESNext",
+    "libReplacement": false // TS 6/7 默认 false；显式关闭可避免无意义的 lib 替换解析。
+  }
+}

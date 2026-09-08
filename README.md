@@ -49,12 +49,14 @@ public-hoist-pattern[]=*eslint*
 }
 ```
 
-`tsconfig.json`：
+`tsconfig.json`（TypeScript 5）：
 
 ```json
 {
   "extends": "@xstools-dev/config-ts/v5/tsconfig.modern.json"
 }
 ```
+
+TypeScript 7 项目改用 `@xstools-dev/config-ts/v7/tsconfig.modern.json`。React JSX 再叠一层同版本的 `tsconfig.react.json`。选项说明见 [`packages/config-ts`](./packages/config-ts)。
 
 各包的配置选项和可用命令见对应包目录中的 README。
