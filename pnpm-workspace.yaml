@@ -1,5 +1,4 @@
 minimumReleaseAge: 0
-neverBuiltDependencies: []
 
 packages:
   - 'packages/*'
