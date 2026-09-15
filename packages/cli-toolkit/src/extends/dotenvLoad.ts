@@ -1,5 +1,5 @@
-import { parse } from '@dotenvx/dotenvx';
 import { readFileSync } from 'node:fs';
+import { parse } from '@dotenvx/dotenvx';
 
 export const dotenvLoad = (path: string) => {
   const envData = parse(readFileSync(path).toString('utf-8'), { processEnv: {} });

@@ -1,11 +1,9 @@
+import { spawnSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { spawnSync } from 'node:child_process';
-
 import { afterEach, describe, expect, test } from 'vite-plus/test';
-
 import { dotenvLoad } from '../src/extends/dotenvLoad';
 import { getTool, listToolNames } from '../src/proxy/tools';
 
