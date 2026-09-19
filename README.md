@@ -4,22 +4,18 @@
 
 ## 包一览
 
-| 包                                                           | 用途                               |
-| ------------------------------------------------------------ | ---------------------------------- |
-| [`@xstools-dev/config-ts`](./packages/config-ts)             | TypeScript 严格模式与现代构建预设  |
-| [`@xstools-dev/config-prettier`](./packages/config-prettier) | Prettier 基础配置与常用插件        |
-| [`@xstools-dev/cli-toolkit`](./packages/cli-toolkit)         | 常用开发与 Monorepo CLI 的统一入口 |
+| 包                                                   | 用途                               |
+| ---------------------------------------------------- | ---------------------------------- |
+| [`@xstools-dev/config-ts`](./packages/config-ts)     | TypeScript 严格模式与现代构建预设  |
+| [`@xstools-dev/cli-toolkit`](./packages/cli-toolkit) | 常用开发与 Monorepo CLI 的统一入口 |
 
 ## 安装
 
 ```bash
 pnpm add -D \
-  @xstools-dev/config-prettier \
   @xstools-dev/config-ts \
   @xstools-dev/cli-toolkit
 ```
-
-`@xstools-dev/config-prettier` 会从自身解析 Prettier 插件，无需配置 `public-hoist-pattern[]=*prettier*`。它也代理了 `prettier` CLI，可直接执行 `pnpm prettier`，因此使用方不需要额外安装 `prettier`。
 
 ## 配置示例
 
@@ -27,15 +23,13 @@ pnpm add -D \
 
 ```json
 {
-  "prettier": "@xstools-dev/config-prettier/base",
   "scripts": {
     "commit": "czg",
     "check-mono": "sherif"
   },
   "devDependencies": {
     "@xstools-dev/cli-toolkit": "workspace:^",
-    "@xstools-dev/config-ts": "workspace:^",
-    "@xstools-dev/config-prettier": "workspace:^"
+    "@xstools-dev/config-ts": "workspace:^"
   }
 }
 ```
