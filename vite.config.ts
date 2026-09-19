@@ -2,7 +2,7 @@ import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
   staged: {
-    '**/*.{js,jsx,ts,tsx,mjs,cjs,mts,cts}': 'vp lint',
+    '**/*.{js,jsx,ts,tsx,mjs,cjs,mts,cts}': 'vp check',
     '**/*.{html,css,scss,less,md,mdx,json,jsonc,json5,yaml,yml,toml,graphql,gql,vue}': 'vp fmt',
   },
   lint: {
@@ -10,7 +10,7 @@ export default defineConfig({
       typeAware: true,
       typeCheck: true,
     },
-    plugins: ['typescript', 'unicorn', 'oxc', 'import'],
+    plugins: ['typescript', 'unicorn', 'oxc', 'react', 'import'],
     rules: {
       'no-unused-vars': [
         'error',
@@ -54,6 +54,7 @@ export default defineConfig({
     sortPackageJson: true,
     sortImports: {
       newlinesBetween: false,
+      partitionByNewline: true,
     },
   },
 });

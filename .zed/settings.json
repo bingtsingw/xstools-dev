@@ -29,6 +29,10 @@
       "format_on_save": "on",
       "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
+    "TSX": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }]
+    },
     "Markdown": {
       "format_on_save": "on",
       "formatter": [{ "language_server": { "name": "oxfmt" } }]

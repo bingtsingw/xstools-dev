@@ -1,13 +1,18 @@
 {
-  "js/ts.tsdk.path": "./node_modules/typescript/lib",
+  "css.validate": false,
+  "stylelint.enable": true,
   "editor.formatOnSave": true,
   "editor.autoClosingQuotes": "always",
-  "editor.quickSuggestions": {
-    "strings": true
-  },
+  "editor.linkedEditing": true,
   "editor.defaultFormatter": "oxc.oxc-vscode",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.oxc": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
   },
   "search.exclude": {
     "**/node_modules": true,
@@ -16,5 +21,6 @@
     "package-lock.json": true,
     "pnpm-lock.yaml": true,
     "yarn.lock": true
-  }
+  },
+  "js/ts.tsdk.path": "./node_modules/typescript/lib"
 }
