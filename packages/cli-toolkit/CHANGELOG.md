@@ -1,5 +1,13 @@
 # @xstools-dev/cli-toolkit
 
+## 0.4.0
+
+### Minor Changes
+
+- [`31684fd`](https://github.com/bingtsingw/xstools-dev/commit/31684fd0e9ee8ea10e4c8983a2963e560819cd39) Thanks [@bingtsingw](https://github.com/bingtsingw)! - upgrade deps
+
+- [`b9f831b`](https://github.com/bingtsingw/xstools-dev/commit/b9f831ba3d7a8a8cbf46fe653672a803e34d2f88) Thanks [@bingtsingw](https://github.com/bingtsingw)! - remove release-it
+
 ## 0.3.0
 
 ### Minor Changes
