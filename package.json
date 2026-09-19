@@ -5,7 +5,6 @@
   "scripts": {
     "check": "vp check",
     "check-mono": "sherif",
-    "check-publish": "pnpm run build && pnpm run check && pnpm run test",
     "clean": "del **/dist **/.build **/.swc **/.turbo **/node_modules !node_modules",
     "commit": "czg",
     "dev": "turbo run dev",

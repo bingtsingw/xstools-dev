@@ -7,7 +7,8 @@ export interface ToolDefinition {
 
 /**
  * CLI command name → resolution target.
- * Single source of truth for package.json#bin (synced on build).
+ * Single source of truth for published commands. `pnpm build` syncs
+ * `package.json#bin` and `bin/*.js` from this table.
  */
 export const TOOLS = {
   // formerly tools-script

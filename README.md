@@ -4,10 +4,10 @@
 
 ## 包一览
 
-| 包                                                   | 用途                               |
-| ---------------------------------------------------- | ---------------------------------- |
-| [`@xstools-dev/config-ts`](./packages/config-ts)     | TypeScript 严格模式与现代构建预设  |
-| [`@xstools-dev/cli-toolkit`](./packages/cli-toolkit) | 常用开发与 Monorepo CLI 的统一入口 |
+| 包                                                   | 用途                                                       |
+| ---------------------------------------------------- | ---------------------------------------------------------- |
+| [`@xstools-dev/config-ts`](./packages/config-ts)     | TypeScript 严格模式与现代构建预设                          |
+| [`@xstools-dev/cli-toolkit`](./packages/cli-toolkit) | 开发与 Monorepo CLI 全家桶（Changesets、Turbo、sherif 等） |
 
 ## 安装
 

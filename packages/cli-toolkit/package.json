@@ -33,10 +33,10 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "build": "vp pack",
+    "build": "vp pack && bun run scripts/gen-bin.ts",
     "dev": "vp pack --watch",
     "gen-bin": "bun run scripts/gen-bin.ts",
-    "test": "vp test"
+    "test": "pnpm run build && vp test"
   },
   "dependencies": {
     "@changesets/changelog-github": "^1.0.0",

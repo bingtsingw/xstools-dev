@@ -14,7 +14,11 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
   release:
+    needs: ci
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +30,7 @@ jobs:
       - uses: changesets/action@v2
         with:
           version-script: pnpm changeset version
-          publish-script: pnpm run check-publish && pnpm changeset publish
+          publish-script: pnpm changeset publish
           commit-message: 'chore: version packages'
         env:
           NPM_CONFIG_PROVENANCE: true

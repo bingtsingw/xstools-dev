@@ -6,10 +6,10 @@
     // "noImplicitAny": true, // strict
     // "noImplicitThis": true, // strict
 
-    // "allowUnreachableCode": false, // eslint
-    // "allowUnusedLabels": false, // eslint
+    // "allowUnreachableCode": false, // 由 lint 覆盖
+    // "allowUnusedLabels": false, // 由 lint 覆盖
     // "exactOptionalPropertyTypes": true, // 暂不开启
-    // "noFallthroughCasesInSwitch": true, // eslint
+    // "noFallthroughCasesInSwitch": true, // 由 lint 覆盖
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
