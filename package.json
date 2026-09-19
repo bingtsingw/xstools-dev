@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "@types/bun": "1.4.2",
-    "@types/node": "24.13.3",
+    "@types/node": "26.6.2",
     "@xstools-dev/cli-toolkit": "workspace:^",
     "turbo": "~2.10.12",
     "typescript": "5.9.3",
-    "vite-plus": "0.3.2"
+    "vite-plus": "0.3.3"
   },
-  "packageManager": "pnpm@12.4.1"
+  "packageManager": "pnpm@12.4.2"
 }
