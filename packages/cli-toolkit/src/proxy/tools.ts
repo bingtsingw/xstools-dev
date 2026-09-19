@@ -19,7 +19,6 @@ export const TOOLS = {
   // formerly tools-mono (+ czg)
   changeset: { pkg: '@changesets/cli', bin: 'changeset' },
   czg: { pkg: 'czg', bin: 'czg' },
-  'release-it': { pkg: 'release-it', bin: 'release-it' },
   sherif: { pkg: 'sherif', bin: 'sherif' },
   turbo: { pkg: 'turbo', bin: 'turbo' },
 } as const satisfies Record<string, ToolDefinition>;

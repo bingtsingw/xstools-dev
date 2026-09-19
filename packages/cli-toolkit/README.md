@@ -19,7 +19,6 @@ pnpm add -D @xstools-dev/cli-toolkit
   "scripts": {
     "changeset": "changeset",
     "check-mono": "sherif",
-    "release": "release-it",
     "build": "turbo run build"
   }
 }
