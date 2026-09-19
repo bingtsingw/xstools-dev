@@ -36,7 +36,7 @@
     "build": "vp pack && bun run scripts/gen-bin.ts",
     "dev": "vp pack --watch",
     "gen-bin": "bun run scripts/gen-bin.ts",
-    "test": "pnpm run build && vp test"
+    "test": "vp test"
   },
   "dependencies": {
     "@changesets/changelog-github": "^1.0.0",
