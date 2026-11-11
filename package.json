@@ -18,7 +18,7 @@
     "@xstools-dev/cli-toolkit": "workspace:^",
     "turbo": "^2.11.2",
     "typescript": "5.9.3",
-    "vite-plus": "0.3.3"
+    "vite-plus": "1.1.0"
   },
   "packageManager": "pnpm@12.4.2"
 }
