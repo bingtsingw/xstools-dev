@@ -5,6 +5,7 @@ export default defineConfig({
     entry: {
       proxy: 'src/proxy/index.ts',
       extends: 'src/extends/index.ts',
+      dotenvx: 'src/exports/dotenvx.ts',
     },
 
     format: ['esm'],

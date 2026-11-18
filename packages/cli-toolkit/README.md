@@ -50,3 +50,12 @@ import { dotenvLoad } from '@xstools-dev/cli-toolkit/extends';
 
 dotenvLoad('.env');
 ```
+
+`@xstools-dev/cli-toolkit/dotenvx` 导出 dotenvx SDK，可以用 `config` 把多个环境变量文件加载到指定对象中。
+
+```ts
+import { dotenvx } from '@xstools-dev/cli-toolkit/dotenvx';
+
+const env = { ...process.env };
+dotenvx.config({ path: ['.env.project', '.env.local'], processEnv: env, strict: true });
+```

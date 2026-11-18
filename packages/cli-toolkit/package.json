@@ -26,6 +26,10 @@
     "./extends": {
       "types": "./dist/extends.d.ts",
       "default": "./dist/extends.js"
+    },
+    "./dotenvx": {
+      "types": "./dist/dotenvx.d.ts",
+      "default": "./dist/dotenvx.js"
     }
   },
   "publishConfig": {
