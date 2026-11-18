@@ -1,5 +1,11 @@
 # @xstools-dev/cli-toolkit
 
+## 0.5.0
+
+### Minor Changes
+
+- [#88](https://github.com/bingtsingw/xstools-dev/pull/88) [`6439a57`](https://github.com/bingtsingw/xstools-dev/commit/6439a57abc6bf14b457bae3ea6d992f2a7ba4179) Thanks [@bingtsingw](https://github.com/bingtsingw)! - Export the dotenvx SDK from `@xstools-dev/cli-toolkit/dotenvx`.
+
 ## 0.4.0
 
 ### Minor Changes
